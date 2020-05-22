@@ -1,0 +1,1110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0e4539d7-561c-466f-abe9-1dff5d2ea725" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/product_server/target/" />
+    <ignored path="$PROJECT_DIR$/comsume_server/target/" />
+    <ignored path="$PROJECT_DIR$/eureka_server/target/" />
+    <ignored path="$PROJECT_DIR$/admin_server/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>spring-boot-starter-actuator</find>
+      <find>getPersonById</find>
+      <find>hasKey</find>
+      <find>EnableCircuitBreaker</find>
+      <find>getFallbackMethod</find>
+      <find>getUserList</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/product_server/src/main/java/schema.sql" />
+        <option value="$PROJECT_DIR$/product_server/src/main/java/data.sql" />
+        <option value="$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/comsume_server/src/main/java/com/chuan/demo/entity/User.java" />
+        <option value="$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/entity/User.java" />
+        <option value="$PROJECT_DIR$/eureka_server/src/main/java/com.chuan.demo/EurekaServerApplication.java" />
+        <option value="$PROJECT_DIR$/comsume_server/src/main/java/com/chuan/demo/test/LambdaInterface.java" />
+        <option value="$PROJECT_DIR$/comsume_server/src/main/java/com/chuan/demo/test/LambdaInterface1.java" />
+        <option value="$PROJECT_DIR$/comsume_server/src/main/java/com/chuan/demo/test/LambdaTest.java" />
+        <option value="$PROJECT_DIR$/eureka_server/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/admin_server/src/main/java/AdminServerApplication.java" />
+        <option value="$PROJECT_DIR$/eureka_server/pom.xml" />
+        <option value="$PROJECT_DIR$/admin_server/src/main/java/com/chuan/demo/AdminServerApplication.java" />
+        <option value="$PROJECT_DIR$/admin_server/pom.xml" />
+        <option value="$PROJECT_DIR$/admin_server/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/config/SwaggerConfig.java" />
+        <option value="$PROJECT_DIR$/comsume_server/src/main/java/com/chuan/demo/config/SwaggerConfig.java" />
+        <option value="$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/entity/Person.java" />
+        <option value="$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/service/PersonServiceImpl.java" />
+        <option value="$PROJECT_DIR$/product_server/src/main/resources/mapper/PersonMapper.xml" />
+        <option value="$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/dao/PersonMapper.java" />
+        <option value="$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/service/PersonService.java" />
+        <option value="$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/service/RedisService.java" />
+        <option value="$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/utils/RedisUtil.java" />
+        <option value="$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/ProductApplocation.java" />
+        <option value="$PROJECT_DIR$/product_server/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/comsume_server/src/main/java/com/chuan/demo/service/UserService.java" />
+        <option value="$PROJECT_DIR$/comsume_server/src/main/java/com/chuan/demo/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/test/DemoTest.java" />
+        <option value="$PROJECT_DIR$/product_server/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/service/impl/PersonServiceImpl.java" />
+        <option value="$PROJECT_DIR$/comsume_server/pom.xml" />
+        <option value="$PROJECT_DIR$/comsume_server/src/main/java/com/chuan/demo/ConsumeApplication.java" />
+        <option value="$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/config/KafkaConfiguration.java" />
+        <option value="$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/listener/AckListener.java" />
+        <option value="$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/listener/BatchListener.java" />
+        <option value="$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/listener/DemoListener.java" />
+        <option value="$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/listener/SingleListener.java" />
+        <option value="$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/config/KafkaInitialConfiguration.java" />
+        <option value="$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/config/KafkaSendResultHandler.java" />
+        <option value="$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/comsume_server/src/main/java/com/chuan/demo/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/comsume_server/src/main/java/com/chuan/demo/api/TestClientFallback.java" />
+        <option value="$PROJECT_DIR$/comsume_server/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/comsume_server/src/main/java/com/chuan/demo/api/TestClient.java" />
+        <option value="$PROJECT_DIR$/comsume_server/src/main/java/com/chuan/demo/api/TestClient3.java" />
+        <option value="$PROJECT_DIR$/comsume_server/src/main/java/com/chuan/demo/api/TestClien3tFallbackFactory.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\maven\repo3.3.3" />
+        <option name="mavenHome" value="D:/maven/apache-maven-3.3.3" />
+        <option name="userSettingsFile" value="D:\maven\repo3.3.3\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="comsume_server Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="comsume_server Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="comsume_server Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+          <item name="org.springframework.cloud:spring-cloud-starter-openfeign:2.0.0.RELEASE" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="width" value="697" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="springcloud-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="comsume_server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="comsume_server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="comsume_server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="comsume_server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="comsume_server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="comsume_server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1590066362916" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15429688" />
+    <property name="project.structure.side.proportion" value="0.5163704" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.chuan.demo" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.chuan.demo.utils" />
+      <recent name="com.chuan.demo.test" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Program\ideaWorkSpace\springcloud-demo\product_server\src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+    <option name="contentProportion" value="0.23802164" />
+  </component>
+  <component name="RunManager" selected="Application.UserController">
+    <configuration name="UserController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.chuan.demo.controller.UserController" />
+      <module name="comsume_server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chuan.demo.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdminServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="admin_server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chuan.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.chuan.demo.AdminServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConsumeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="comsume_server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chuan.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.chuan.demo.ConsumeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="eureka_server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chuan.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.chuan.demo.EurekaServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServerApplication_peer1" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka_server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.chuan.demo.EurekaServerApplication" />
+      <option name="ACTIVE_PROFILES" value="peer1" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServerApplication_peer2" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka_server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.chuan.demo.EurekaServerApplication" />
+      <option name="ACTIVE_PROFILES" value="peer2" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductApplocation" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="product_server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chuan.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.chuan.demo.ProductApplocation" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.UserController" />
+      <item itemvalue="Spring Boot.EurekaServerApplication_peer2" />
+      <item itemvalue="Spring Boot.EurekaServerApplication_peer1" />
+      <item itemvalue="Spring Boot.ConsumeApplication" />
+      <item itemvalue="Spring Boot.EurekaServerApplication" />
+      <item itemvalue="Spring Boot.ProductApplocation" />
+      <item itemvalue="Spring Boot.AdminServerApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ProductApplocation" />
+        <item itemvalue="Spring Boot.ConsumeApplication" />
+        <item itemvalue="Spring Boot.EurekaServerApplication" />
+        <item itemvalue="Application.UserController" />
+        <item itemvalue="Spring Boot.AdminServerApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\wanda\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0e4539d7-561c-466f-abe9-1dff5d2ea725" name="Default Changelist" comment="" />
+      <created>1587634002434</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587634002434</updated>
+      <workItem from="1587634006284" duration="7036000" />
+      <workItem from="1588921255398" duration="1836000" />
+      <workItem from="1588991549724" duration="17124000" />
+      <workItem from="1589160819179" duration="1894000" />
+      <workItem from="1589351550188" duration="11503000" />
+      <workItem from="1589524202633" duration="3735000" />
+      <workItem from="1589971458210" duration="10433000" />
+      <workItem from="1590045201195" duration="10651000" />
+      <workItem from="1590112064721" duration="369000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="64581000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1354009" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.43371522" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.42716858" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" weight="0.60229135" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.44704992" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Word Book" order="6" side_tool="true" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27987897" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.43371522" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.42716858" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" visible="true" weight="0.34042552" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.25945538" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Word Book" order="6" side_tool="true" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/comsume_server/src/main/java/com/chuan/demo/controller/UserController.java</url>
+          <line>61</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/service/impl/PersonServiceImpl.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/service/impl/PersonServiceImpl.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/utils/RedisUtil.java</url>
+          <line>101</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/comsume_server/src/main/java/com/chuan/demo/controller/UserController.java</url>
+          <line>57</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/comsume_server/src/main/java/com/chuan/demo/service/impl/UserServiceImpl.java</url>
+          <line>24</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/comsume_server/src/main/java/com/chuan/demo/controller/UserController.java</url>
+          <line>104</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/comsume_server/src/main/java/com/chuan/demo/api/TestClientFallback.java</url>
+          <line>18</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.0.5.RELEASE/spring-boot-autoconfigure-2.0.5.RELEASE.jar!/org/springframework/boot/autoconfigure/SpringBootApplication.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_server/src/test/java/com/chuan/demo/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springcloud-demo.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka_server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MAVEN/com.chuan.demo:admin_server:1.0-SNAPSHOT">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MAVEN</ID>
+          <OriginalElement>com.chuan.demo:admin_server:1.0-SNAPSHOT</OriginalElement>
+          <nodes>
+            <node x="" y="">com.chuan.demo:admin_server:1.0-SNAPSHOT</node>
+            <node x="" y="">junit:junit:jar:4.11</node>
+            <node x="" y="">junit:junit:jar:4.11/org.hamcrest:hamcrest-core:jar:1.3</node>
+            <node x="" y="">de.codecentric:spring-boot-admin-starter-server:jar:2.0.5</node>
+            <node x="" y="">de.codecentric:spring-boot-admin-starter-server:jar:2.0.5/de.codecentric:spring-boot-admin-server:jar:2.0.5</node>
+            <node x="" y="">de.codecentric:spring-boot-admin-starter-server:jar:2.0.5/de.codecentric:spring-boot-admin-server:jar:2.0.5/org.springframework.boot:spring-boot-starter-webflux:jar:2.0.5.RELEASE</node>
+            <node x="" y="">de.codecentric:spring-boot-admin-starter-server:jar:2.0.5/de.codecentric:spring-boot-admin-server:jar:2.0.5/org.springframework.boot:spring-boot-starter-webflux:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter-reactor-netty:jar:2.0.5.RELEASE</node>
+            <node x="" y="">de.codecentric:spring-boot-admin-starter-server:jar:2.0.5/de.codecentric:spring-boot-admin-server:jar:2.0.5/org.springframework.boot:spring-boot-starter-webflux:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter-reactor-netty:jar:2.0.5.RELEASE/io.projectreactor.ipc:reactor-netty:jar:0.7.9.RELEASE</node>
+            <node x="" y="">de.codecentric:spring-boot-admin-starter-server:jar:2.0.5/de.codecentric:spring-boot-admin-server:jar:2.0.5/org.springframework.boot:spring-boot-starter-webflux:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter-reactor-netty:jar:2.0.5.RELEASE/io.projectreactor.ipc:reactor-netty:jar:0.7.9.RELEASE/io.netty:netty-codec-http:jar:4.1.29.Final</node>
+            <node x="" y="">de.codecentric:spring-boot-admin-starter-server:jar:2.0.5/de.codecentric:spring-boot-admin-server:jar:2.0.5/org.springframework.boot:spring-boot-starter-webflux:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter-reactor-netty:jar:2.0.5.RELEASE/io.projectreactor.ipc:reactor-netty:jar:0.7.9.RELEASE/io.netty:netty-codec-http:jar:4.1.29.Final/io.netty:netty-codec:jar:4.1.29.Final</node>
+            <node x="" y="">de.codecentric:spring-boot-admin-starter-server:jar:2.0.5/de.codecentric:spring-boot-admin-server:jar:2.0.5/org.springframework.boot:spring-boot-starter-webflux:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter-reactor-netty:jar:2.0.5.RELEASE/io.projectreactor.ipc:reactor-netty:jar:0.7.9.RELEASE/io.netty:netty-handler:jar:4.1.29.Final</node>
+            <node x="" y="">de.codecentric:spring-boot-admin-starter-server:jar:2.0.5/de.codecentric:spring-boot-admin-server:jar:2.0.5/org.springframework.boot:spring-boot-starter-webflux:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter-reactor-netty:jar:2.0.5.RELEASE/io.projectreactor.ipc:reactor-netty:jar:0.7.9.RELEASE/io.netty:netty-handler:jar:4.1.29.Final/io.netty:netty-buffer:jar:4.1.29.Final</node>
+            <node x="" y="">de.codecentric:spring-boot-admin-starter-server:jar:2.0.5/de.codecentric:spring-boot-admin-server:jar:2.0.5/org.springframework.boot:spring-boot-starter-webflux:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter-reactor-netty:jar:2.0.5.RELEASE/io.projectreactor.ipc:reactor-netty:jar:0.7.9.RELEASE/io.netty:netty-handler:jar:4.1.29.Final/io.netty:netty-transport:jar:4.1.29.Final</node>
+            <node x="" y="">de.codecentric:spring-boot-admin-starter-server:jar:2.0.5/de.codecentric:spring-boot-admin-server:jar:2.0.5/org.springframework.boot:spring-boot-starter-webflux:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter-reactor-netty:jar:2.0.5.RELEASE/io.projectreactor.ipc:reactor-netty:jar:0.7.9.RELEASE/io.netty:netty-handler:jar:4.1.29.Final/io.netty:netty-transport:jar:4.1.29.Final/io.netty:netty-resolver:jar:4.1.29.Final</node>
+            <node x="" y="">de.codecentric:spring-boot-admin-starter-server:jar:2.0.5/de.codecentric:spring-boot-admin-server:jar:2.0.5/org.springframework.boot:spring-boot-starter-webflux:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter-reactor-netty:jar:2.0.5.RELEASE/io.projectreactor.ipc:reactor-netty:jar:0.7.9.RELEASE/io.netty:netty-handler-proxy:jar:4.1.29.Final</node>
+            <node x="" y="">de.codecentric:spring-boot-admin-starter-server:jar:2.0.5/de.codecentric:spring-boot-admin-server:jar:2.0.5/org.springframework.boot:spring-boot-starter-webflux:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter-reactor-netty:jar:2.0.5.RELEASE/io.projectreactor.ipc:reactor-netty:jar:0.7.9.RELEASE/io.netty:netty-handler-proxy:jar:4.1.29.Final/io.netty:netty-codec-socks:jar:4.1.29.Final</node>
+            <node x="" y="">de.codecentric:spring-boot-admin-starter-server:jar:2.0.5/de.codecentric:spring-boot-admin-server:jar:2.0.5/org.springframework.boot:spring-boot-starter-webflux:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter-reactor-netty:jar:2.0.5.RELEASE/io.projectreactor.ipc:reactor-netty:jar:0.7.9.RELEASE/io.netty:netty-transport-native-epoll:jar:linux-x86_64:4.1.29.Final</node>
+            <node x="" y="">de.codecentric:spring-boot-admin-starter-server:jar:2.0.5/de.codecentric:spring-boot-admin-server:jar:2.0.5/org.springframework.boot:spring-boot-starter-webflux:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter-reactor-netty:jar:2.0.5.RELEASE/io.projectreactor.ipc:reactor-netty:jar:0.7.9.RELEASE/io.netty:netty-transport-native-epoll:jar:linux-x86_64:4.1.29.Final/io.netty:netty-common:jar:4.1.29.Final</node>
+            <node x="" y="">de.codecentric:spring-boot-admin-starter-server:jar:2.0.5/de.codecentric:spring-boot-admin-server:jar:2.0.5/org.springframework.boot:spring-boot-starter-webflux:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter-reactor-netty:jar:2.0.5.RELEASE/io.projectreactor.ipc:reactor-netty:jar:0.7.9.RELEASE/io.netty:netty-transport-native-epoll:jar:linux-x86_64:4.1.29.Final/io.netty:netty-transport-native-unix-common:jar:4.1.29.Final</node>
+            <node x="" y="">de.codecentric:spring-boot-admin-starter-server:jar:2.0.5/de.codecentric:spring-boot-admin-server:jar:2.0.5/org.springframework.boot:spring-boot-starter-webflux:jar:2.0.5.RELEASE/org.springframework:spring-webflux:jar:5.0.9.RELEASE</node>
+            <node x="" y="">de.codecentric:spring-boot-admin-starter-server:jar:2.0.5/de.codecentric:spring-boot-admin-server:jar:2.0.5/org.springframework.boot:spring-boot-starter-webflux:jar:2.0.5.RELEASE/org.synchronoss.cloud:nio-multipart-parser:jar:1.1.0</node>
+            <node x="" y="">de.codecentric:spring-boot-admin-starter-server:jar:2.0.5/de.codecentric:spring-boot-admin-server:jar:2.0.5/org.springframework.boot:spring-boot-starter-webflux:jar:2.0.5.RELEASE/org.synchronoss.cloud:nio-multipart-parser:jar:1.1.0/org.slf4j:slf4j-api:jar:1.7.25</node>
+            <node x="" y="">de.codecentric:spring-boot-admin-starter-server:jar:2.0.5/de.codecentric:spring-boot-admin-server:jar:2.0.5/org.springframework.boot:spring-boot-starter-webflux:jar:2.0.5.RELEASE/org.synchronoss.cloud:nio-multipart-parser:jar:1.1.0/org.synchronoss.cloud:nio-stream-storage:jar:1.1.3</node>
+            <node x="" y="">de.codecentric:spring-boot-admin-starter-server:jar:2.0.5/de.codecentric:spring-boot-admin-server:jar:2.0.5/org.springframework.boot:spring-boot-starter-thymeleaf:jar:2.0.5.RELEASE</node>
+            <node x="" y="">de.codecentric:spring-boot-admin-starter-server:jar:2.0.5/de.codecentric:spring-boot-admin-server:jar:2.0.5/org.springframework.boot:spring-boot-starter-thymeleaf:jar:2.0.5.RELEASE/org.thymeleaf:thymeleaf-spring5:jar:3.0.9.RELEASE</node>
+            <node x="" y="">de.codecentric:spring-boot-admin-starter-server:jar:2.0.5/de.codecentric:spring-boot-admin-server:jar:2.0.5/org.springframework.boot:spring-boot-starter-thymeleaf:jar:2.0.5.RELEASE/org.thymeleaf:thymeleaf-spring5:jar:3.0.9.RELEASE/org.thymeleaf:thymeleaf:jar:3.0.9.RELEASE</node>
+            <node x="" y="">de.codecentric:spring-boot-admin-starter-server:jar:2.0.5/de.codecentric:spring-boot-admin-server:jar:2.0.5/org.springframework.boot:spring-boot-starter-thymeleaf:jar:2.0.5.RELEASE/org.thymeleaf:thymeleaf-spring5:jar:3.0.9.RELEASE/org.thymeleaf:thymeleaf:jar:3.0.9.RELEASE/org.attoparser:attoparser:jar:2.0.4.RELEASE</node>
+            <node x="" y="">de.codecentric:spring-boot-admin-starter-server:jar:2.0.5/de.codecentric:spring-boot-admin-server:jar:2.0.5/org.springframework.boot:spring-boot-starter-thymeleaf:jar:2.0.5.RELEASE/org.thymeleaf:thymeleaf-spring5:jar:3.0.9.RELEASE/org.thymeleaf:thymeleaf:jar:3.0.9.RELEASE/org.unbescape:unbescape:jar:1.1.5.RELEASE</node>
+            <node x="" y="">de.codecentric:spring-boot-admin-starter-server:jar:2.0.5/de.codecentric:spring-boot-admin-server:jar:2.0.5/org.springframework.boot:spring-boot-starter-thymeleaf:jar:2.0.5.RELEASE/org.thymeleaf.extras:thymeleaf-extras-java8time:jar:3.0.1.RELEASE</node>
+            <node x="" y="">de.codecentric:spring-boot-admin-starter-server:jar:2.0.5/de.codecentric:spring-boot-admin-server:jar:2.0.5/org.springframework.boot:spring-boot-starter-actuator:jar:2.0.5.RELEASE</node>
+            <node x="" y="">de.codecentric:spring-boot-admin-starter-server:jar:2.0.5/de.codecentric:spring-boot-admin-server:jar:2.0.5/org.springframework.boot:spring-boot-starter-actuator:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-actuator-autoconfigure:jar:2.0.5.RELEASE</node>
+            <node x="" y="">de.codecentric:spring-boot-admin-starter-server:jar:2.0.5/de.codecentric:spring-boot-admin-server:jar:2.0.5/org.springframework.boot:spring-boot-starter-actuator:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-actuator-autoconfigure:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-actuator:jar:2.0.5.RELEASE</node>
+            <node x="" y="">de.codecentric:spring-boot-admin-starter-server:jar:2.0.5/de.codecentric:spring-boot-admin-server:jar:2.0.5/org.springframework.boot:spring-boot-starter-actuator:jar:2.0.5.RELEASE/io.micrometer:micrometer-core:jar:1.0.6</node>
+            <node x="" y="">de.codecentric:spring-boot-admin-starter-server:jar:2.0.5/de.codecentric:spring-boot-admin-server:jar:2.0.5/org.springframework.boot:spring-boot-starter-actuator:jar:2.0.5.RELEASE/io.micrometer:micrometer-core:jar:1.0.6/org.hdrhistogram:HdrHistogram:jar:2.1.10</node>
+            <node x="" y="">de.codecentric:spring-boot-admin-starter-server:jar:2.0.5/de.codecentric:spring-boot-admin-server:jar:2.0.5/org.springframework.boot:spring-boot-starter-actuator:jar:2.0.5.RELEASE/io.micrometer:micrometer-core:jar:1.0.6/org.latencyutils:LatencyUtils:jar:2.0.3</node>
+            <node x="" y="">de.codecentric:spring-boot-admin-starter-server:jar:2.0.5/de.codecentric:spring-boot-admin-server:jar:2.0.5/io.projectreactor.addons:reactor-extra:jar:3.1.7.RELEASE</node>
+            <node x="" y="">de.codecentric:spring-boot-admin-starter-server:jar:2.0.5/de.codecentric:spring-boot-admin-server:jar:2.0.5/io.projectreactor.addons:reactor-extra:jar:3.1.7.RELEASE/io.projectreactor:reactor-core:jar:3.1.9.RELEASE</node>
+            <node x="" y="">de.codecentric:spring-boot-admin-starter-server:jar:2.0.5/de.codecentric:spring-boot-admin-server:jar:2.0.5/io.projectreactor.addons:reactor-extra:jar:3.1.7.RELEASE/io.projectreactor:reactor-core:jar:3.1.9.RELEASE/org.reactivestreams:reactive-streams:jar:1.0.2</node>
+            <node x="" y="">de.codecentric:spring-boot-admin-starter-server:jar:2.0.5/de.codecentric:spring-boot-admin-server-ui:jar:2.0.5</node>
+            <node x="" y="">de.codecentric:spring-boot-admin-starter-server:jar:2.0.5/de.codecentric:spring-boot-admin-server-cloud:jar:2.0.5</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.0.5.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.0.5.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot:jar:2.0.5.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-autoconfigure:jar:2.0.5.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.0.5.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.0.5.RELEASE/ch.qos.logback:logback-classic:jar:1.2.3</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.0.5.RELEASE/ch.qos.logback:logback-classic:jar:1.2.3/ch.qos.logback:logback-core:jar:1.2.3</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.0.5.RELEASE/org.apache.logging.log4j:log4j-to-slf4j:jar:2.10.0</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.0.5.RELEASE/org.apache.logging.log4j:log4j-to-slf4j:jar:2.10.0/org.apache.logging.log4j:log4j-api:jar:2.10.0</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter-logging:jar:2.0.5.RELEASE/org.slf4j:jul-to-slf4j:jar:1.7.25</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.0.5.RELEASE/javax.annotation:javax.annotation-api:jar:1.3.2</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.0.5.RELEASE/org.springframework:spring-core:jar:5.0.9.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.0.5.RELEASE/org.springframework:spring-core:jar:5.0.9.RELEASE/org.springframework:spring-jcl:jar:5.0.9.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter:jar:2.0.5.RELEASE/org.yaml:snakeyaml:jar:1.19</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter-json:jar:2.0.5.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter-json:jar:2.0.5.RELEASE/com.fasterxml.jackson.core:jackson-databind:jar:2.9.6</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter-json:jar:2.0.5.RELEASE/com.fasterxml.jackson.core:jackson-databind:jar:2.9.6/com.fasterxml.jackson.core:jackson-annotations:jar:2.9.0</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter-json:jar:2.0.5.RELEASE/com.fasterxml.jackson.core:jackson-databind:jar:2.9.6/com.fasterxml.jackson.core:jackson-core:jar:2.9.6</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter-json:jar:2.0.5.RELEASE/com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.9.6</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter-json:jar:2.0.5.RELEASE/com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.9.6</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter-json:jar:2.0.5.RELEASE/com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.9.6</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:2.0.5.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:2.0.5.RELEASE/org.apache.tomcat.embed:tomcat-embed-core:jar:8.5.34</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:2.0.5.RELEASE/org.apache.tomcat.embed:tomcat-embed-el:jar:8.5.34</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.0.5.RELEASE/org.springframework.boot:spring-boot-starter-tomcat:jar:2.0.5.RELEASE/org.apache.tomcat.embed:tomcat-embed-websocket:jar:8.5.34</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.0.5.RELEASE/org.hibernate.validator:hibernate-validator:jar:6.0.12.Final</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.0.5.RELEASE/org.hibernate.validator:hibernate-validator:jar:6.0.12.Final/javax.validation:validation-api:jar:2.0.1.Final</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.0.5.RELEASE/org.hibernate.validator:hibernate-validator:jar:6.0.12.Final/org.jboss.logging:jboss-logging:jar:3.3.2.Final</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.0.5.RELEASE/org.hibernate.validator:hibernate-validator:jar:6.0.12.Final/com.fasterxml:classmate:jar:1.3.4</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.0.5.RELEASE/org.springframework:spring-web:jar:5.0.9.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.0.5.RELEASE/org.springframework:spring-web:jar:5.0.9.RELEASE/org.springframework:spring-beans:jar:5.0.9.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.0.5.RELEASE/org.springframework:spring-webmvc:jar:5.0.9.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.0.5.RELEASE/org.springframework:spring-webmvc:jar:5.0.9.RELEASE/org.springframework:spring-aop:jar:5.0.9.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.0.5.RELEASE/org.springframework:spring-webmvc:jar:5.0.9.RELEASE/org.springframework:spring-context:jar:5.0.9.RELEASE</node>
+            <node x="" y="">org.springframework.boot:spring-boot-starter-web:jar:2.0.5.RELEASE/org.springframework:spring-webmvc:jar:5.0.9.RELEASE/org.springframework:spring-expression:jar:5.0.9.RELEASE</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.14756481705839594" x="2054.0" y="682.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>All</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka_server/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comsume_server/src/main/java/com/chuan/demo/config/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/config/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Java/jdk1.8.0_91/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="617" column="17" selection-start-line="617" selection-start-column="17" selection-end-line="617" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.47/mysql-connector-java-5.1.47.jar!/com/mysql/jdbc/Driver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6.jar!/org/apache/ibatis/annotations/Mapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-dependencies/2.0.5.RELEASE/spring-boot-dependencies-2.0.5.RELEASE.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="1074" column="12" selection-start-line="1074" selection-start-column="12" selection-end-line="1074" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/eureka/eureka-client/1.9.2/eureka-client-1.9.2.jar!/com/netflix/discovery/shared/LookupService.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/1.0.2/kafka-clients-1.0.2.jar!/org/apache/kafka/clients/producer/ProducerConfig.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="54" column="31" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/kafka/spring-kafka/2.1.8.RELEASE/spring-kafka-2.1.8.RELEASE.jar!/org/springframework/kafka/core/KafkaTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="122" column="46" selection-start-line="122" selection-start-column="46" selection-end-line="122" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_server/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin_server/src/main/java/com/chuan/demo/AdminServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comsume_server/src/main/java/com/chuan/demo/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/service/RedisService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="24" column="25" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/dao/PersonMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/service/PersonService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/utils/RedisUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1722">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
+          <folding>
+            <element signature="e#3066#3067#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/ProductApplocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_server/src/main/resources/mapper/PersonMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="28" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/entity/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2646">
+          <caret line="126" selection-start-line="126" selection-end-line="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/service/impl/PersonServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#677#678#0" expanded="true" />
+            <element signature="e#723#724#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_server/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="24" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/test/DemoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2145">
+          <caret line="126" column="35" lean-forward="true" selection-start-line="126" selection-start-column="35" selection-end-line="126" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/config/KafkaConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/listener/AckListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="30" column="12" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/listener/BatchListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="33" column="12" lean-forward="true" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/listener/DemoListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/listener/SingleListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="13" column="12" lean-forward="true" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/config/KafkaInitialConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1038#1039#0" expanded="true" />
+            <element signature="e#1105#1106#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/config/KafkaSendResultHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comsume_server/src/main/java/com/chuan/demo/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_server/src/main/java/com/chuan/demo/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="56" column="38" lean-forward="true" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="38" />
+          <folding>
+            <element signature="e#1486#1487#0" expanded="true" />
+            <element signature="e#1523#1524#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.9.RELEASE/spring-web-5.0.9.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="131" column="45" lean-forward="true" selection-start-line="131" selection-start-column="45" selection-end-line="131" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comsume_server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="61" column="60" selection-start-line="61" selection-start-column="53" selection-end-line="61" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-netflix-core/2.0.0.RELEASE/spring-cloud-netflix-core-2.0.0.RELEASE.jar!/org/springframework/cloud/netflix/hystrix/EnableHystrix.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="19" selection-start-line="19" selection-end-line="19" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comsume_server/src/main/java/com/chuan/demo/ConsumeApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comsume_server/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comsume_server/src/main/java/com/chuan/demo/api/TestClientFallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comsume_server/src/main/java/com/chuan/demo/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comsume_server/src/main/java/com/chuan/demo/api/TestClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comsume_server/src/main/java/com/chuan/demo/api/TestClient3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="10" column="123" selection-start-line="10" selection-start-column="123" selection-end-line="10" selection-end-column="123" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comsume_server/src/main/java/com/chuan/demo/api/TestClien3tFallbackFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#408#409#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>comsume_server:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>admin_server</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.1618335" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.51449955" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
