@@ -8,8 +8,8 @@ import java.util.Date;
 
 /**
  * @ClassName Goods
- * @Description: TODO
- * @Author: wanda
+ * @Description: 物品信息类
+ * @Author: 张川
  * @Date 2020/5/22 13:49
  **/
 //@Setter
