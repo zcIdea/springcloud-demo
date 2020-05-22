@@ -8,8 +8,8 @@ import java.util.List;
 
 /**
  * @ClassName Person
- * @Description: TODO
- * @Author: wanda
+ * @Description: 人员信息类
+ * @Author: 张川
  * @Date 2020/5/13 14:57
  **/
 @Data
