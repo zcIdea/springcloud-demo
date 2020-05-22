@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * @ClassName PersonServiceImpl
  * @Description: TODO
@@ -41,5 +43,19 @@ public class PersonServiceImpl implements PersonService {
         }
         //查询key的String类型的值
         return redisTemplate.opsForValue().get(key);
+    }
+
+    @Override
+    public int saveUserInfo(Person person) {
+        return personMapper.saveUserInfo(person);
+    }
+
+    @Override
+    public List<Person> selectPersonAndGoods() {
+        return personMapper.selectPersonAndGoods();
+    }
+    @Override
+    public List<Person> selectPersonAndGoods2() {
+        return personMapper.selectPersonAndGoods2();
     }
 }

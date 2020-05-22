@@ -6,6 +6,8 @@ import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Mapper
 //@Repository
 public interface PersonMapper {
@@ -14,4 +16,10 @@ public interface PersonMapper {
     Person getOne(@Param("id") int id);
 
     Person getPersonById(@Param("id") int id);
+
+    int saveUserInfo(Person person);
+
+    List<Person> selectPersonAndGoods();
+
+    List<Person> selectPersonAndGoods2();
 }

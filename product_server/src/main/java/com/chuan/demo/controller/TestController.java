@@ -1,11 +1,15 @@
 package com.chuan.demo.controller;
 
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiImplicitParam;
-import io.swagger.annotations.ApiImplicitParams;
-import io.swagger.annotations.ApiOperation;
+import com.chuan.demo.entity.Person;
+import com.chuan.demo.entity.User;
+import com.chuan.demo.service.PersonService;
+import io.swagger.annotations.*;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import springfox.documentation.spring.web.json.Json;
+
+import java.util.List;
 
 /**
  * @ClassName TestController
@@ -18,6 +22,9 @@ import org.springframework.web.bind.annotation.*;
 @Slf4j
 @RequestMapping("/test")
 public class TestController {
+
+    @Autowired
+    private PersonService personService;
 
     /**
      * 测试方法，git提交
@@ -35,5 +42,40 @@ public class TestController {
         return name+":hello gitHub";
     }
 
+    /**
+     *
+     * @param person
+     * @return
+     */
+    @RequestMapping(value = "/savePersonInfo",method = RequestMethod.POST)
+    public Person saveUserInfo(@RequestBody(required = true) Person person){
+        log.info("保存人员信息");
+        log.info("TestController savePersonInfo--> person:{}",person);
+        int i = personService.saveUserInfo(person);
+        log.info("新增返回结果 --> i:{}",i);
+        System.out.println(i);
+        return person;
+
+    }
+
+
+    /**
+     * @ApiResponses：用于表示一组响应
+     * @ApiResponse：用在@ApiResponses中，一般用于表达一个错误的响应信息
+     * @return
+     */
+    @ApiOperation(value = "selectPersonAndGoods",notes = "查询人员物品信息")
+    @ApiResponses({@ApiResponse(code = 200,message = "success"),
+                   @ApiResponse(code = 400,message = "error")})
+    @RequestMapping(value = "/selectPersonAndGoods",method = RequestMethod.GET)
+    public List<Person> selectPersonAndGoods(){
+        log.info("查询人员物品信息");
+        log.info("TestController selectPersonAndGoods");
+        List<Person> personList = personService.selectPersonAndGoods();
+        List<Person> personList2 = personService.selectPersonAndGoods2();
+        log.info("查询返回结果 --> personList:{}",personList);
+        return personList2;
+
+    }
 
 }
