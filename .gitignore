@@ -23,3 +23,5 @@
 hs_err_pid*
 .idea/vcs.xml
 .idea/workspace.xml
+common_api/target/
+.idea/
