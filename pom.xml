@@ -13,6 +13,7 @@
         <module>comsume_server</module>
         <module>eureka_server</module>
         <module>admin_server</module>
+        <module>common_api</module>
     </modules>
 
     <parent>

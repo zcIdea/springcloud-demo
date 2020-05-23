@@ -1,13 +1,11 @@
 package com.chuan.demo.controller;
 
 import com.chuan.demo.entity.Person;
-import com.chuan.demo.entity.User;
 import com.chuan.demo.service.PersonService;
 import io.swagger.annotations.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import springfox.documentation.spring.web.json.Json;
 
 import java.util.List;
 

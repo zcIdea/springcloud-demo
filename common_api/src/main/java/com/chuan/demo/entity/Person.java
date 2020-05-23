@@ -1,7 +1,5 @@
 package com.chuan.demo.entity;
 
-import jdk.nashorn.internal.objects.annotations.Getter;
-import jdk.nashorn.internal.objects.annotations.Setter;
 import lombok.Data;
 
 import java.util.List;

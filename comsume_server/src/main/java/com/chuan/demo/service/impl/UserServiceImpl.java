@@ -1,6 +1,5 @@
 package com.chuan.demo.service.impl;
 
-import com.chuan.demo.entity.User;
 import com.chuan.demo.service.UserService;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
