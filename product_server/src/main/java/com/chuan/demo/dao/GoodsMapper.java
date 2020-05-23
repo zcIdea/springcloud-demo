@@ -1,7 +1,6 @@
 package com.chuan.demo.dao;
 
 import com.chuan.demo.entity.Goods;
-import com.chuan.demo.entity.Person;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;

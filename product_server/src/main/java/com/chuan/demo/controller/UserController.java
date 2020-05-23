@@ -1,8 +1,6 @@
 package com.chuan.demo.controller;
 
-import com.chuan.demo.dao.UserDao;
 import com.chuan.demo.entity.Person;
-import com.chuan.demo.entity.User;
 import com.chuan.demo.service.PersonService;
 import com.chuan.demo.service.RedisService;
 import com.chuan.demo.utils.RedisUtil;
@@ -11,7 +9,6 @@ import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.repository.query.Param;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -19,7 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @Api(value = "UserController",description = "测试Swagger")
 @RestController

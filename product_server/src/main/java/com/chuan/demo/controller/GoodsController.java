@@ -1,9 +1,7 @@
 package com.chuan.demo.controller;
 
 import com.chuan.demo.entity.Goods;
-import com.chuan.demo.entity.Person;
 import com.chuan.demo.service.GoodsService;
-import com.chuan.demo.service.PersonService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;

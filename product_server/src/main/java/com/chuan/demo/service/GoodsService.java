@@ -1,7 +1,6 @@
 package com.chuan.demo.service;
 
 import com.chuan.demo.entity.Goods;
-import com.chuan.demo.entity.Person;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

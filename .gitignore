@@ -26,3 +26,7 @@ hs_err_pid*
 =======
 .idea/workspace.xml
 >>>>>>> 3676893735690ef8c82a09013bedf1854574ea6a
+.idea/compiler.xml
+.idea/encodings.xml
+common_api/target/
+comsume_server/target/

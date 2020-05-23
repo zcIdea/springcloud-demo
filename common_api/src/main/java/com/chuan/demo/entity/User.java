@@ -2,16 +2,26 @@ package com.chuan.demo.entity;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+
+/**
+ * @ClassName User
+ * @Description: TODO
+ * @Author: wanda
+ * @Date 2020/4/23 17:59
+ **/
 @Entity
+@Table(name = "uesr")
 public class User {
+
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy= GenerationType.IDENTITY)//主键生成策略
+    @Column(name="id")//数据库字段名
     private Long id;
-    @Column
+    @Column(name="name")
     private String name;
-    @Column
+    @Column(name="age")
     private Integer age;
-    @Column
+    @Column(name="money")
     private BigDecimal money;
 
     public Long getId() {

@@ -1,6 +1,8 @@
 package com.chuan.demo.controller;
 
+import com.chuan.demo.api.GoodsApi;
 import com.chuan.demo.api.TestClient;
+import com.chuan.demo.entity.Goods;
 import com.chuan.demo.entity.User;
 import com.chuan.demo.service.UserService;
 import com.netflix.appinfo.InstanceInfo;
@@ -45,6 +47,9 @@ public class UserController {
 
     @Autowired
     private TestClient testClient;
+
+    @Autowired
+    private GoodsApi goodsApi;
 
     @ApiOperation(value = "获取用户信息-消费方",notes = "接口")
     @ApiImplicitParams({@ApiImplicitParam(name = "id",value = "用户id",required = true,dataType = "Long")})
@@ -106,6 +111,16 @@ public class UserController {
         String userInfo = (String) userList.get(0);
         System.out.println(userInfo);
         return userInfo;
+    }
+
+    @ApiOperation(value = "获取物品信息",notes = "接口1")
+    @GetMapping("/queryGoodsAndPersonInfoList")
+    public List<Goods> queryGoodsAndPersonInfoList(@RequestParam("id") Long userId) {
+        log.info("获取物品信息");
+        log.info("UserController queryGoodsAndPersonInfoList->userId:{}",userId);
+        List<Goods> goods = goodsApi.queryGoodsAndPersonInfoList();
+        log.info("获取的数据-> goodsList:{}",goods);
+        return goods;
     }
 
     public static void main(String[] args) {
