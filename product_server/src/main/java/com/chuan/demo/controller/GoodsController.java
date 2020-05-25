@@ -66,6 +66,7 @@ public class GoodsController {
         List<Goods> goods = goodsService.queryGoodsAndPersonList();
         List<Goods> goods2 = goodsService.queryGoodsAndPersonList2();
         log.info("新增返回结果 --> i:{}",goods.get(0).getGoods());
+        log.info("新增返回结果---------987654334432----- --> i:{}",goods2.get(0).getGoods());
         return goods2;
 
     }
