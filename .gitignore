@@ -28,4 +28,5 @@ common_api/target/
 comsume_server/target/
 .idea/
 admin_server/target/
+product_server/target/
 sentinel_demo/target/
