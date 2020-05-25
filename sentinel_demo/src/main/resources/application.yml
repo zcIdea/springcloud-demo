@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: sentinel_demo
+  cloud:
+    sentinel:    # sentinel dashboard
+      transport:
+        dashboard: localhost:8080
+#      enabled: true
+
+server:
+  port: 8001
+
+
+
