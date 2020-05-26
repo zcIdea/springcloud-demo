@@ -96,6 +96,9 @@ public class GoodsController {
         log.info("提供方 获取物品信息");
         log.info("提供方 获取的数据-> userId:{}",userId);
         return "提供方方法调用"+userId;
+
+        //ceshi idea提交到GitHub远程仓库
+
     }
 
 }
