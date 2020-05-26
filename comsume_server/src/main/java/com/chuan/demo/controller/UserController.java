@@ -116,19 +116,19 @@ public class UserController {
     @ApiOperation(value = "获取物品信息",notes = "接口1")
     @GetMapping("/queryGoodsAndPersonInfoList")
     public List<Goods> queryGoodsAndPersonInfoList(@RequestParam("id") Long userId) {
-        log.info("获取物品信息");
+        log.info("消费方 获取物品信息");
         log.info("UserController queryGoodsAndPersonInfoList->userId:{}",userId);
         List<Goods> goods = goodsApi.queryGoodsAndPersonInfoList();
-        log.info("获取的数据-> goodsList:{}",goods);
+        log.info("消费方 获取的数据-> goodsList:{}",goods);
         return goods;
     }
 
-    public static void main(String[] args) {
-        //日志打印输出格式
-        String id="00000";
-        String name="ddddd";
-        log.info("获取用户信息 id：{},name：{}",id,name);
-        log.info("UserController main：id->{},name：{}",id,name);
-        log.info("获取用户信息返回结果 result：{}",id+name);
+    @ApiOperation(value = "测试nginx",notes = "接口1")
+    @GetMapping("/testNginx")
+    public String testNginx(@RequestParam("id") Long userId) {
+        log.info("消费方 获取物品信息");
+        log.info("消费方 获取的数据-> userId:{}",userId);
+        return "消费方方法调用"+userId;
     }
+
 }

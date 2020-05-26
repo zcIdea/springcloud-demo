@@ -15,7 +15,7 @@ import org.springframework.web.client.RestTemplate;
  * 如下就是hystrix命令超时时间命令执行超时时间，为1000ms和执行是不启用超时
  */
 
-@RestController
+//@RestController
 public class MovieController {
 
   @Autowired
