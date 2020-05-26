@@ -61,12 +61,12 @@ public class GoodsController {
     @ApiOperation(value = "queryGoodsAndPersonInfoList",notes = "查询物品人员信息")
     @RequestMapping(value = "/queryGoodsAndPersonInfoList",method = RequestMethod.GET)
     public List<Goods> queryGoodsAndPersonInfoList(){
-        log.info("查询物品人员信息");
+        log.info("提供方 查询物品人员信息");
         log.info("GoodsController queryGoodsAndPersonInfoList");
         List<Goods> goods = goodsService.queryGoodsAndPersonList();
         List<Goods> goods2 = goodsService.queryGoodsAndPersonList2();
-        log.info("新增返回结果 --> i:{}",goods.get(0).getGoods());
-        log.info("新增返回结果---------987654334432----- --> i:{}",goods2.get(0).getGoods());
+        log.info("提供方 新增返回结果 --> i:{}",goods.get(0).getGoods());
+        log.info("提供方 新增返回结果---------987654334432----- --> i:{}",goods2.get(0).getGoods());
         return goods2;
 
     }
@@ -88,6 +88,14 @@ public class GoodsController {
             log.error("更新失败");
             return "fail";
         }
+    }
+
+    @ApiOperation(value = "测试nginx",notes = "接口1")
+    @GetMapping("/testNginx")
+    public String testNginx(@RequestParam("id") Long userId) {
+        log.info("提供方 获取物品信息");
+        log.info("提供方 获取的数据-> userId:{}",userId);
+        return "提供方方法调用"+userId;
     }
 
 }
