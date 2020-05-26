@@ -13,6 +13,13 @@ public class DemoListener {
     //声明consumerID为demo，监听topicName为topic.quick.demo的Topic
     @KafkaListener(id = "demo", topics = "topic.quick.demo")
     public void listen(String msgData) {
-        log.info("demo receive : "+msgData);
+        log.info("接收kafka信息，topic:{},msg:{}","topic.quick.demo",msgData);
+        log.info("kafka消息接收方 demo receive : "+msgData);
+    }
+
+    @KafkaListener(id = "default", topics = "topic.quick.default")
+    public void listenDefaultTopic(String msgData) {
+        log.info("接收自定义主题kafka信息，topic:{},msg:{}","topic.quick.default",msgData);
+        log.info("自定义主题kafka消息接收方 demo receive : "+msgData);
     }
 }

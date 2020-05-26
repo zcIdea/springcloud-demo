@@ -16,7 +16,8 @@ import java.util.List;
 public interface GoodsApi {
 
     @ApiOperation(value = "获取物品信息接口",notes = "获取物品信息")
-    @RequestMapping(value = "/goods/queryGoodsAndPersonInfoList",method = RequestMethod.GET)
+//    @RequestMapping(value = "/goods/queryGoodsAndPersonInfoList",method = RequestMethod.GET)
+    @RequestMapping(value = "/queryGoodsAndPersonInfoList",method = RequestMethod.GET)
     List<Goods> queryGoodsAndPersonInfoList();
 
 

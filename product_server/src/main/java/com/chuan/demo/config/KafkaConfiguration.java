@@ -17,8 +17,11 @@ import org.springframework.kafka.transaction.KafkaTransactionManager;
 import java.util.HashMap;
 import java.util.Map;
 
-@Configuration
-//@EnableKafka
+/**
+ * kafka 配置类
+ */
+//@Configuration
+//@EnableKafka   //启用kafka
 public class KafkaConfiguration {
 
     //ConcurrentKafkaListenerContainerFactory为创建Kafka监听器的工程类，这里只配置了消费者
@@ -40,20 +43,27 @@ public class KafkaConfiguration {
     @Primary  //在拥有多个同类型的Bean时优先使用该Bean
     public ProducerFactory<Integer, String> producerFactory() {
         DefaultKafkaProducerFactory factory = new DefaultKafkaProducerFactory<>(senderProps());
-        //配置Kafka事务管理器并使用@Transactional注解
+        return factory;
+    }
+
+    //配置Kafka事务管理器并使用@Transactional注解
+    @Bean("tranProducerFactory")
+    public ProducerFactory<Integer, String> tranProducerFactory() {
+        DefaultKafkaProducerFactory factory = new DefaultKafkaProducerFactory<>(senderProps());
         factory.transactionCapable();
         factory.setTransactionIdPrefix("tran-");
         return factory;
     }
 
+
     /**
      * 使用@Transactional注解方式
-     * @param producerFactory
+     * @param tranProducerFactory
      * @return
      */
-    @Bean
-    public KafkaTransactionManager transactionManager(ProducerFactory producerFactory) {
-        KafkaTransactionManager manager = new KafkaTransactionManager(producerFactory);
+//    @Bean
+    public KafkaTransactionManager transactionManager(ProducerFactory tranProducerFactory) {
+        KafkaTransactionManager manager = new KafkaTransactionManager(tranProducerFactory);
         return manager;
     }
 
@@ -61,6 +71,16 @@ public class KafkaConfiguration {
     @Bean
     public KafkaTemplate<Integer, String> kafkaTemplate() {
         KafkaTemplate template = new KafkaTemplate<Integer, String>(producerFactory());
+        return template;
+    }
+
+    /**
+     * @Description:kafkaTemplate实现了Kafka发送接收等功能（支持事务）
+     * @return
+     */
+    @Bean("tranKafkaTemplate")
+    public KafkaTemplate<Integer, String> tranKafkaTemplate() {
+        KafkaTemplate template = new KafkaTemplate<Integer, String>(tranProducerFactory());
         return template;
     }
 
