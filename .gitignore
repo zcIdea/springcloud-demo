@@ -30,3 +30,7 @@ comsume_server/target/
 admin_server/target/
 product_server/target/
 sentinel_demo/target/
+gateway_server/target/
+nacos_client/target/
+nacos_server/target/
+websocket_server/target/

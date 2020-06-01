@@ -1,0 +1,20 @@
+server:
+  port: 8766
+
+#访问 http://peer1:8766/testNginx?id=123213 ---》路由到具体的后端接口地址 http://localhost:8767/testNginx?id=123213
+#通过路由的服务地址http://localhost:8766/testNginx?id=123213 调用 nginx的负载均衡的服务地址 http://peer1:80 （peer1是host文件中配置的域名）
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: neo_route
+#        uri: http://www.ityouknow.com
+#        predicates:
+#        - Path=/spring-cloud
+#        uri: http://peer1:8767
+        uri: http://peer1:80     # nginx负载均衡地址，通过nginx在调用 消费方和提供方相同的方法
+        predicates:
+        - Path=/testNginx        # Path Route Predicate 接收一个匹配路径的参数来判断是否走路由。
+        - Method=GET             # 通过是 POST、GET、PUT、DELETE 等不同的请求方式来进行路由。
+        - Query=smile            # 支持传入两个参数，一个是属性名一个为属性值，属性值可以是正则表达式。只要请求中包含 smile 属性的参数即可匹配路由。
+        - Query=keep, pu.        # 当请求中包含 keep 属性并且参数值是以 pu 开头的长度为三位的字符串才会进行匹配和路由 , . 为任意字符。

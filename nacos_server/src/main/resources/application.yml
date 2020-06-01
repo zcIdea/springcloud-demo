@@ -1,0 +1,12 @@
+server:
+  port: 8765
+
+spring:
+  application:
+    name: nacos-server
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848 # 配置服务名称和Nacos地址，让服务消费者可以发现上面已经注册到Nacos的服务。
+#      config:
+#        server-addr: 127.0.0.1:8848 # 配置服务名称和Nacos地址，让服务消费者可以获取上面已经注册到Nacos的配置。

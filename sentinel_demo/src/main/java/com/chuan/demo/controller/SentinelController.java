@@ -6,13 +6,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @ClassName SentinelController
- * @Description: TODO
- * @Author: wanda
+ * @Description: 测试 sentinel 使用
+ * @Author: 张川
  * @Date 2020/5/25 17:10
  **/
 
-@RestController
 @Slf4j
+@RestController
 public class SentinelController {
 
 

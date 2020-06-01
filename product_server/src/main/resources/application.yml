@@ -72,3 +72,9 @@ zuul:
     baidu:                            # baidu 是可以随便写的，但最好根据要路由的服务取
       path: "/it/**"
       url: http://www.ityouknow.com/
+
+# 自定义启动器
+test:
+  service:
+    enable: true
+    config: a,b,c,d,1,2,3
