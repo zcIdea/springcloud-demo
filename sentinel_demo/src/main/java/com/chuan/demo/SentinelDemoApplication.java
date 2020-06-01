@@ -5,8 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @ClassName SentinelDemo
- * @Description: TODO
- * @Author: wanda
+ * @Description: 启动类
+ * @Author: 张川
  * @Date 2020/5/25 17:05
  **/
 @SpringBootApplication

@@ -25,12 +25,12 @@ import java.util.Map;
 
 /**
  * @ClassName KafkaController
- * @Description: TODO
- * @Author: wanda
+ * @Description: kafka示例
+ * @Author: zc
  * @Date 2020/5/26 15:52
  **/
 @Slf4j
-//@RestController
+@RestController
 public class KafkaController {
 
     @Autowired
@@ -40,8 +40,8 @@ public class KafkaController {
     private KafkaTemplate tranKafkaTemplate;
     @Resource
     private KafkaTemplate defaultKafkaTemplate;
-    @Autowired
-    private AdminClient adminClient;
+//    @Autowired
+//    private AdminClient adminClient;
     @Autowired
     private KafkaSendResultHandler producerListener;
 

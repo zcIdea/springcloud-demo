@@ -1,14 +1,12 @@
+server:
+  port: 8001
+
 spring:
   application:
     name: sentinel_demo
   cloud:
-    sentinel:    # sentinel dashboard
+    sentinel:    # sentinel dashboard 配置
       transport:
-        dashboard: localhost:8080
+        dashboard: localhost:8080    #sentinel服务地址
 #      enabled: true
-
-server:
-  port: 8001
-
-
 
