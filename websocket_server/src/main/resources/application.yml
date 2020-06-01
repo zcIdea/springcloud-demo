@@ -1,0 +1,44 @@
+server:
+  port: 8766
+spring:
+  application:
+    name: websocket_server
+
+  mvc:
+    view:
+      prefix: /static/
+      suffix: .html
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/    #获取服务地址
+
+# Feign设置超时时间
+#  使用Feign调用接口分两层，ribbon的调用和hystrix的调用，所以ribbon的超时时间和Hystrix的超时时间的结合就是Feign的超时时间
+#  一般情况下 都是 ribbon 的超时时间（<）hystrix的超时时间（因为涉及到ribbon的重试机制）
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000  #hystrix的超时时间
+
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 5000  #ribbon的超时时间
+
+#启动feign的hystrix的功能，降级容错fallback
+feign:
+  hystrix:
+    enabled: true
+  client:
+    config:
+      default:
+        connectTimeout: 10000 # feign 的超时设置
+        readTimeout: 10000
+
+#配置服务提供方的ip地址（自定义），feign的@FeignClient中使用
+provider:
+  url: http://127.0.0.1:8768

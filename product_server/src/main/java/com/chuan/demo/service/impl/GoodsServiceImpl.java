@@ -5,6 +5,7 @@ import com.chuan.demo.entity.Goods;
 import com.chuan.demo.service.GoodsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -40,9 +41,19 @@ public class GoodsServiceImpl implements GoodsService {
      * @param goods
      * @return
      */
+//    @Transactional(rollbackFor = RuntimeException.class)
+    @Transactional              //事物管理，保证数据的一致性
     @Override
     public int saveGoodsInfo(Goods goods) {
-        return goodsMapper.saveGoodsInfo(goods);
+        int i = goodsMapper.saveGoodsInfo(goods);
+
+        /*if(true){
+            System.out.println("抛出异常，测试事物管理");
+            throw new RuntimeException("抛出运行时异常,测试事物管理，事物回滚");
+        }else{
+            return i;
+        }*/
+        return i;
     }
 
     /**

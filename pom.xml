@@ -15,6 +15,10 @@
         <module>admin_server</module>
         <module>common_api</module>
         <module>sentinel_demo</module>
+        <module>gateway_server</module>
+        <module>websocket_server</module>
+        <module>nacos_server</module>
+        <module>nacos_client</module>
     </modules>
 
     <parent>

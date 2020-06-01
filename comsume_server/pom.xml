@@ -86,6 +86,12 @@
             </exclusions>
         </dependency>
 
+        <!-- Spring Cloud Gateway 架包依赖-->
+        <!--<dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
+        </dependency>-->
+
 
     </dependencies>
 
