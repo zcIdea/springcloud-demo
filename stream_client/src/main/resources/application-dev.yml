@@ -1,0 +1,25 @@
+server:
+  port: 9003
+
+spring:
+  application:
+    name: stream-client-dev
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: localhost:9092
+          zk-nodes: localhost:2181
+          auto-create-topics: true
+      bindings:
+        #input是接收，注意这里不能再像前面一样写output了
+        input:
+          destination: stream-demo  # topic名称
+#          destination: stream-demo-trans  # topic名称（消息中转站）
+          #分组的组名
+          group: group
+          consumer:
+            #开启分区
+            partitioned: true
+      #分区数量
+      instance-count: 2

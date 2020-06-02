@@ -29,6 +29,10 @@ public class KafkaConfiguration {
     public ConcurrentKafkaListenerContainerFactory<Integer, String> kafkaListenerContainerFactory() {
         ConcurrentKafkaListenerContainerFactory<Integer, String> factory = new ConcurrentKafkaListenerContainerFactory<>();
         factory.setConsumerFactory(consumerFactory());
+
+        //禁止自动启动,手动启动，如定时任务@Scheduled(cron = "0 24 16 * * ?")
+        factory.setAutoStartup(false);
+
         return factory;
     }
 
