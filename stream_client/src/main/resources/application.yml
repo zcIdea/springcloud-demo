@@ -1,0 +1,22 @@
+server:
+  port: 9002
+
+spring:
+  application:
+    name: stream-client
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: localhost:9092
+          zk-nodes: localhost:2181
+          auto-create-topics: true
+      bindings:
+        #input是接收，注意这里不能再像前面一样写output了
+        input:
+          destination: stream-demo  # topic名称
+          #分组的组名  同一组只有其中一个接收到消息。避免了消息重复消费。
+          group: group
+        #进行消息中转处理后，在进行转发出去
+#        output:
+#          destination: stream-demo-trans

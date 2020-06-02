@@ -25,7 +25,39 @@
     </insert>
     <!-- 更新 -->
     <update id="updateGoodsInfo">
-        update goods set revision=#{revision},updated_by=#{updatedBy},updated_time=now() where id=#{id}
+        update goods
+           set
+               <if test=" revision!=null and revision!='' ">
+                   revision=#{revision},
+               </if>
+               <if test=" updatedBy!=null and updatedBy!='' ">
+                   updated_by=#{updatedBy},
+               </if>
+               updated_time=now() where id=#{id}
+    </update>
+    <!--
+    mybatis 配置文件中<set>丢失逗号
+    mybatis 组件会自动将<set>中的最后一个<if>中的逗号去除掉
+    <where> 元素只会在子元素返回任何内容的情况下才插入 “WHERE” 子句。而且，若子句的开头为 “AND” 或 “OR”，where 元素也会将它们去除。
+    -->
+    <update id="updateGoodsInfoSet">
+        update goods
+           <set>
+               <if test=" revision!=null and revision!='' ">
+                   revision=#{revision},
+               </if>
+               <if test=" updatedBy!=null and updatedBy!='' ">
+                   updated_by=#{updatedBy},
+               </if>
+               <if test="true">
+                   updated_time=now()
+               </if>
+           </set>
+        <where>
+            <if test=" id!=null and id!='' ">
+                id=#{id}
+            </if>
+        </where>
     </update>
 
     <!--<resultMap id="BaseResultMap" type="Person">-->

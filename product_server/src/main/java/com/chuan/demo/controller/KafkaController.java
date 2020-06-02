@@ -122,4 +122,37 @@ public class KafkaController {
         return "success";
     }
 
+    /**
+     *
+     * @param msg
+     * @return
+     * @throws InterruptedException
+     */
+    @ApiOperation(value = "",notes = "")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "msg",value = "",required = true,dataType = "String")
+    })
+    @GetMapping("/sendScheduled")
+    public String sendScheduled(@RequestParam("msg") String msg) throws InterruptedException {
+        kafkaTemplate.send("topic.quick.durable", msg);
+        Thread.sleep(1000);
+        return "success";
+    }
+    /**
+     * 异常处理器的使用
+     * @param msg
+     * @return
+     * @throws InterruptedException
+     */
+    @ApiOperation(value = "",notes = "")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "msg",value = "",required = true,dataType = "String")
+    })
+    @GetMapping("/sendError")
+    public String sendError(@RequestParam("msg") String msg) throws InterruptedException {
+        kafkaTemplate.send("topic.quick.error", "test error handle");
+        Thread.sleep(1000);
+        return "success";
+    }
+
 }

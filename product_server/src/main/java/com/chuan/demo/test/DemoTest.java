@@ -32,7 +32,7 @@ public class DemoTest {
 
     @Autowired
     private KafkaTemplate kafkaTemplate;
-    @Autowired
+//    @Autowired
     private AdminClient adminClient;
     @Resource
     private KafkaTemplate defaultKafkaTemplate;
@@ -187,6 +187,16 @@ public class DemoTest {
     public void testAck() throws InterruptedException {
         for (int i = 0; i < 5; i++) {
             kafkaTemplate.send("topic.quick.ack", i+"");
+        }
+    }
+
+    /**
+     * 定时执行
+     */
+    @Test
+    public void testTask() {
+        for (int i = 0; i < 10; i++) {
+            kafkaTemplate.send("topic.quick.durable", "this is durable message");
         }
     }
 }
