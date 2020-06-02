@@ -15,6 +15,9 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ # 暴露服务地址
   instance:
     hostname: localhost
+  server:
+    enable-self-preservation: false      #开启自我保护模式 默认true开启
+    eviction-interval-timer-in-ms: 5000  #5000毫秒 清理无效节点,默认60*1000毫秒,即60秒
 spring:
   profiles: test
 

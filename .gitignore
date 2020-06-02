@@ -34,3 +34,6 @@ gateway_server/target/
 nacos_client/target/
 nacos_server/target/
 websocket_server/target/
+eureka_server/target/
+stream_client/target/
+stream_server/target/

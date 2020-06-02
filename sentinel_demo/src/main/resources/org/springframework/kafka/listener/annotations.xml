@@ -1,0 +1,5 @@
+<root>
+    <item name='org.springframework.kafka.listener.ConsumerAwareListenerErrorHandler'>
+        <annotation name='java.lang.Deprecated'/>
+    </item>
+</root>
