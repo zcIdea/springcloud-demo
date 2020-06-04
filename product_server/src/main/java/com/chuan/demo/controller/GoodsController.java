@@ -2,15 +2,19 @@ package com.chuan.demo.controller;
 
 import com.chuan.demo.entity.Goods;
 import com.chuan.demo.service.GoodsService;
+import com.chuan.demo.service.RedisService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpSession;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @ClassName TestController
@@ -24,8 +28,14 @@ import java.util.List;
 @RequestMapping("/goods")
 public class GoodsController {
 
+    @Value("${server.port}")
+    Integer port;
+
     @Autowired
     private GoodsService goodsService;
+
+    @Autowired
+    private RedisService redisService;
 
     /**
      * @return
@@ -35,6 +45,15 @@ public class GoodsController {
         log.info("保存物品信息");
         log.info("GoodsController queryGoodsInfoList");
         List<Goods> goods = goodsService.queryGoodsList();
+
+        //测试cache-redis缓存
+        Goods one = goodsService.getOne(1);
+        String o = (String) redisService.get("c1::1");
+
+        List<Map<String, Object>> mapList = goodsService.queryGoodsListByJDBC();
+
+        List<Goods> allGoods = goodsService.getAllGoods();
+
         log.info("新增返回结果 --> i:{}",goods.get(0).getGoods());
         return goods;
 
@@ -99,6 +118,25 @@ public class GoodsController {
 
         //ceshi idea提交到GitHub远程仓库
 
+    }
+
+
+    /**
+     * 通过spring session解决session共享问题，会将session数据保存到redis中，每次获取从redis中获取
+     * 使用 Spring Session 了，其实就是使用普通的 HttpSession ，其他的 Session 同步到 Redis 等操作，框架已经自动帮你完成了
+     * @param session
+     * @return
+     */
+    @GetMapping("/set")
+    public String set(HttpSession session) {
+        session.setAttribute("user", "javaboy");
+        session.setAttribute("session", "session共享问题解决");
+        return String.valueOf(port);
+    }
+    @GetMapping("/get")
+    public String get(HttpSession session) {
+        System.out.println(session.getAttribute("session") + ":" + port);
+        return session.getAttribute("user") + ":" + port;
     }
 
 }
