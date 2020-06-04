@@ -2,6 +2,7 @@ package com.chuan.demo.entity;
 
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -13,7 +14,7 @@ import java.util.Date;
 //@Setter
 //@Getter
 @Data
-public class Goods {
+public class Goods implements Serializable {
     private int id;
     private int personId;
     private String goods;
