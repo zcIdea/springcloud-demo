@@ -5,11 +5,13 @@
     <file type="web" url="file://$PROJECT_DIR$/comsume_server" />
     <file type="web" url="file://$PROJECT_DIR$/eureka_server" />
     <file type="web" url="file://$PROJECT_DIR$/product_server" />
+    <file type="web" url="file://$PROJECT_DIR$/springmvc_demo" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc_demo/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

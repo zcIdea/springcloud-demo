@@ -1,9 +1,7 @@
 package com.chuan.demo.dao;
 
 import com.chuan.demo.entity.Goods;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 
@@ -15,6 +13,8 @@ public interface GoodsMapper {
      * @param id
      * @return
      */
+//    @Results(id = "BaseResultMap")
+    @ResultMap(value = "BaseResultMap")
     @Select("select * from goods where id=#{id}")
     Goods getOne(@Param("id") int id);
 

@@ -37,3 +37,4 @@ websocket_server/target/
 eureka_server/target/
 stream_client/target/
 stream_server/target/
+springmvc_demo/target/
