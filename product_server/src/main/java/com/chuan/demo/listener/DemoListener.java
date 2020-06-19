@@ -49,6 +49,17 @@ public class DemoListener {
     }
 
 
+    /**
+     * 使用指定的kafka容易工厂
+     * @param msgData
+     */
+    @KafkaListener(id = "default", topics = "topic.quick.default",containerFactory = "filterContainerFactory")
+    public void listenTopicContainerFactory (String msgData) {
+        log.info("接收自定义主题kafka信息，topic:{},msg:{}","topic.quick.default",msgData);
+        log.info("自定义主题kafka消息接收方 demo receive : "+msgData);
+    }
+
+
 
 
 }

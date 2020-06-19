@@ -15,6 +15,7 @@ import org.springframework.messaging.MessageHeaders;
 import org.springframework.messaging.support.GenericMessage;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.concurrent.ListenableFuture;
+import org.springframework.util.concurrent.ListenableFutureCallback;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -63,6 +64,37 @@ public class KafkaController {
         map.put(KafkaHeaders.MESSAGE_KEY, 0);
         GenericMessage message = new GenericMessage("use Message to send message",new MessageHeaders(map));
         ListenableFuture send = kafkaTemplate.send(message);
+
+        //休眠5秒，为了使监听器有足够的时间监听到topic的数据
+        Thread.sleep(5000);
+        return "success";
+    }
+
+    /**
+     * 发送信息，调用回调函数处理成功与失败
+     * @param msg
+     * @return
+     * @throws InterruptedException
+     */
+    @ApiOperation(value = "",notes = "")
+    @GetMapping("/kafkaTemplate")
+    public String testCallbackDemo(@RequestParam("msg") String msg) throws InterruptedException {
+        log.info("发送信息到kafka -> msg：{}",msg);
+
+        //使用ProducerRecord封装kafka信息
+        ProducerRecord record=new ProducerRecord("topic.quick.demo", msg);
+
+        kafkaTemplate.send(record).addCallback(new ListenableFutureCallback() {
+            @Override
+            public void onFailure(Throwable ex) {
+                log.info("发送信息到kafka失败 -> ex：{}",ex);
+            }
+
+            @Override
+            public void onSuccess(Object result) {
+                log.info("发送信息到kafka成功 -> result：{}",result);
+            }
+        });
 
         //休眠5秒，为了使监听器有足够的时间监听到topic的数据
         Thread.sleep(5000);

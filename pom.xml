@@ -21,6 +21,8 @@
         <module>nacos_client</module>
         <module>stream_server</module>
         <module>stream_client</module>
+        <module>dubbo_server</module>
+        <module>dubbo_springcloud_client</module>
     </modules>
 
     <parent>
