@@ -16,7 +16,8 @@ import java.util.concurrent.atomic.AtomicInteger;
  * 注解的值将被用于监听用户连接的终端访问URL地址,客户端可以通过这个URL来连接到WebSocket服务器端
  * @author 张川
  */
-@ServerEndpoint("/websocket/{userId}")
+//@ServerEndpoint("/websocket/{userId}")
+@ServerEndpoint("/websocket/{userId}/{houseId}")
 @Component
 public class WebSocketServer {
     static Logger logger = LoggerFactory.getLogger(WebSocketServer.class);
@@ -29,17 +30,23 @@ public class WebSocketServer {
     //当前发消息的人员userId
     private String userId = "";
 
+    //当前发消息的人员所属
+    private String houseId = "";
+
     /**
      * 连接建立成功调用的方法*/
     @OnOpen
-    public void onOpen(@PathParam(value = "userId") String param, Session WebSocketsession, EndpointConfig config) {
+//    public void onOpen(@PathParam(value = "userId") String param, Session WebSocketsession, EndpointConfig config) {
+    public void onOpen(@PathParam(value = "userId") String param,@PathParam(value = "houseId") String houseId, Session WebSocketsession, EndpointConfig config) {
         userId = param;
+        this.houseId = houseId;
         //log.info("authKey:{}",authKey);
         this.WebSocketsession = WebSocketsession;
         webSocketSet.put(param, this);//加入map中
+        System.out.println(this);
         int cnt = OnlineCount.incrementAndGet(); // 在线数加1
         logger.info("有连接加入，当前连接数为：{}", cnt);
-        sendMessage(this.WebSocketsession, "连接成功");
+        sendMessage(this.WebSocketsession, "连接成功"+this);
     }
 
     /**
@@ -115,6 +122,25 @@ public class WebSocketServer {
             }
         }
     }
+    /**
+     * 群发消息
+     * @param message
+     * @throws IOException
+     */
+    public void broadCastInfoAndHouse(String message,String houseId) {
+        for (String key : webSocketSet.keySet()) {
+            WebSocketServer webSocketServer = webSocketSet.get(key);
+            //其他用户的直播房id
+            String houseIdLocal = webSocketServer.houseId;
+            //判断发送方是否在同一个直播间内，如果是，则向他发送消息
+            if(houseId.equals(houseIdLocal)){
+                Session session = webSocketServer.WebSocketsession;
+                if(session != null && session.isOpen() && !userId.equals(key)){
+                    sendMessage(session, message);
+                }
+            }
+        }
+    }
 
     /**
      * 指定Session发送消息
@@ -133,10 +159,13 @@ public class WebSocketServer {
 
     /**
      * 指定Session发送消息
-     * @param message
-     * @throws IOException
+     *
+     * @param userId     发送方
+     * @param toUserId   接收方
+     * @param message    消息内容
      */
     public void sendToUserAndMe(String userId,String toUserId, String message) {
+        //通过用户id获取用户连接通道
         WebSocketServer webSocketServer = webSocketSet.get(toUserId);
         if ( webSocketServer != null && webSocketServer.WebSocketsession.isOpen()){
             sendMessageInfo(userId,webSocketServer, message);

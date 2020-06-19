@@ -21,7 +21,9 @@
             //等同于socket = new WebSocket("ws://localhost:8888/xxxx/im/25");
             //var socketUrl="${request.contextPath}/im/"+$("#userId").val();
             // var socketUrl="http://localhost:8766/websocket/"+$("#userId").val();
-            var socketUrl="http://10.3.15.60:8766/websocket/"+$("#userId").val();
+            var socketUrl="http://10.3.15.60:8766/websocket/"+$("#userId").val()+"/"+$("#houseId").val();
+            // var socketUrl="http://172.31.255.67:9007/websocket/"+$("#userId").val()+"/"+$("#houseId").val();
+            // var socketUrl="http://172.31.255.67:9007/websocket/"+"/"+$("#houseId").val();
             socketUrl=socketUrl.replace("https","ws").replace("http","ws");
             console.log(socketUrl);
             if(socket!=null){
@@ -32,7 +34,7 @@
             //打开事件
             socket.onopen = function() {
                 console.log("websocket已打开");
-                //socket.send("这是来自客户端的消息" + location.href + new Date());
+                socket.send("这是来自客户端的消息" + location.href + new Date());
             };
             //获得消息事件
             socket.onmessage = function(msg) {
@@ -41,7 +43,8 @@
                 setMessageInnerHTML(msg.data);
             };
             //关闭事件
-            socket.onclose = function() {
+            socket.onclose = function(e) {
+                console.log('websocket 断开: ' + e.code + ' ' + e.reason + ' ' + e.wasClean)
                 console.log("websocket已关闭");
             };
             //发生了错误事件
@@ -50,7 +53,7 @@
             }
         }
     }
-    function sendMessage() {
+    function sendMessage(type) {
         if(typeof(WebSocket) == "undefined") {
             console.log("您的浏览器不支持WebSocket");
         }else {
@@ -58,17 +61,44 @@
             console.log('{"toUserId":"'+$("#toUserId").val()+'","contentText":"'+$("#contentText").val()+'"}');
             // socket.send('{"toUserId":"'+$("#toUserId").val()+'","contentText":"'+$("#contentText").val()+'"}');
 
-            $.ajax({
-                url: "/ws/sendOneUserIdAndMe",
-                type: "GET",
-                data: {"message": $("#contentText").val(),"userId":$("#userId").val(),"toUserId":$("#toUserId").val()},
-                // async:false,
-                success: function(data) {
-                    // alert(data);
-                },error:function (a,b,c) {
-                    alert("业务冲突校验出错，请联系管理员！"+b+c);
-                }
-            });
+            if(type=="1"){
+                $.ajax({
+                    url: "/ws/sendOneUserIdAndMe",
+                    type: "GET",
+                    data: {"message": $("#contentText").val(),"userId":$("#userId").val(),"toUserId":$("#toUserId").val()},
+                    // async:false,
+                    success: function(data) {
+                        // alert(data);
+                    },error:function (a,b,c) {
+                        alert("业务冲突校验出错，请联系管理员！"+b+c);
+                    }
+                });
+
+            }else if(type=="0"){
+                $.ajax({
+                    url: "/ws/sendAll",
+                    type: "GET",
+                    data: {"message": $("#contentText").val()},
+                    // async:false,
+                    success: function(data) {
+                        // alert(data);
+                    },error:function (a,b,c) {
+                        alert("业务冲突校验出错，请联系管理员！"+b+c);
+                    }
+                });
+            }else if(type=="2"){
+                $.ajax({
+                    url: "/ws/sendAllMessageAndHouse",
+                    type: "GET",
+                    data: {"message": $("#contentText").val(),"houseId": $("#houseId").val()},
+                    // async:false,
+                    success: function(data) {
+                        // alert(data);
+                    },error:function (a,b,c) {
+                        alert("业务冲突校验出错，请联系管理员！"+b+c);
+                    }
+                });
+            }
 
         }
     }
@@ -89,10 +119,13 @@
 <body>
 <p>【userId】：<div><input id="userId" name="userId" type="text" value="10"></div>
 <p>【toUserId】：<div><input id="toUserId" name="toUserId" type="text" value="20"></div>
-<p>【toUserId】：<div><input id="contentText" name="contentText" type="text" value="hello websocket"></div>
+<p>【message】：<div><input id="contentText" name="contentText" type="text" value="hello websocket"></div>
+<p>【houseId】：<div><input id="houseId" name="houseId" type="text" value="1"></div>
 <p>【操作】：<div><button><a onclick="openSocket()">开启socket</a></button></div>
 <p>【操作】：<div><button><a onclick="closeWebSocket()">关闭socket</a></button></div>
-<p>【操作】：<div><button><a onclick="sendMessage()">发送消息</a></button></div>
+<p>【操作】：<div><button><a onclick="sendMessage('1')">发送给指定人消息</a></button></div>
+<p>【操作】：<div><button><a onclick="sendMessage('0')">发送给所有人消息</a></button></div>
+<p>【操作】：<div><button><a onclick="sendMessage('2')">发送给指定直播间消息</a></button></div>
 
 <div class="row">
     <div class="col-md-12">

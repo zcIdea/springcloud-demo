@@ -80,6 +80,9 @@ public class BatchListener {
 
     /**
      * 监听Topic中指定的分区
+     * @TopicPartition：topic--需要监听的Topic的名称，partitions --需要监听Topic的分区id，
+     * partitionOffsets --可以设置从某个偏移量开始监听
+     * @PartitionOffset：partition --分区Id，非数组，initialOffset --初始偏移量
      * @param data
      */
     @KafkaListener(id = "batchWithPartition",clientIdPrefix = "bwp",containerFactory = "batchContainerFactory",
@@ -98,6 +101,11 @@ public class BatchListener {
 
     /**
      * 注解方式获取消息头及消息体
+     * @Payload：获取的是消息的消息体，也就是发送内容
+     * @Header(KafkaHeaders.RECEIVED_MESSAGE_KEY)：获取发送消息的key
+     * @Header(KafkaHeaders.RECEIVED_PARTITION_ID)：获取当前消息是从哪个分区中监听到的
+     * @Header(KafkaHeaders.RECEIVED_TOPIC)：获取监听的TopicName
+     * @Header(KafkaHeaders.RECEIVED_TIMESTAMP)：获取时间戳
      * @param data
      * @param key
      * @param partition

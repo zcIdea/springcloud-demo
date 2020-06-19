@@ -2,7 +2,7 @@ server:
   port: 8766
 spring:
   application:
-    name: websocket_server
+    name: websocket-server
 
   mvc:
     view:
@@ -42,3 +42,5 @@ feign:
 #配置服务提供方的ip地址（自定义），feign的@FeignClient中使用
 provider:
   url: http://127.0.0.1:8768
+  webSocket-url: http://127.0.0.1:9006
+  webSocket-live-url: http://172.31.255.67:9007

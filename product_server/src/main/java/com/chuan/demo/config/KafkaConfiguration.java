@@ -1,6 +1,8 @@
 package com.chuan.demo.config;
 
+import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
+import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.IntegerDeserializer;
 import org.apache.kafka.common.serialization.IntegerSerializer;
@@ -12,6 +14,7 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.kafka.annotation.EnableKafka;
 import org.springframework.kafka.config.ConcurrentKafkaListenerContainerFactory;
 import org.springframework.kafka.core.*;
+import org.springframework.kafka.listener.adapter.RecordFilterStrategy;
 import org.springframework.kafka.transaction.KafkaTransactionManager;
 
 import java.util.HashMap;
@@ -20,6 +23,7 @@ import java.util.Map;
 /**
  * kafka 配置类
  */
+@Slf4j
 @Configuration
 @EnableKafka   //启用kafka
 public class KafkaConfiguration {
@@ -35,6 +39,34 @@ public class KafkaConfiguration {
 
         return factory;
     }
+
+    /**
+     * 消息过滤器可以在消息抵达监听容器前被拦截，过滤器根据系统业务逻辑去筛选出需要的数据再交由KafkaListener处理
+     * 配置消息其实是非常简单的额，只需要为监听容器工厂配置一个RecordFilterStrategy(消息过滤策略)，
+     *   返回true的时候消息将会被抛弃，返回false时，消息能正常抵达监听容器。
+     * @return
+     */
+    @Bean(name = "filterContainerFactory")
+    public ConcurrentKafkaListenerContainerFactory filterContainerFactory() {
+        ConcurrentKafkaListenerContainerFactory factory = new ConcurrentKafkaListenerContainerFactory();
+        factory.setConsumerFactory(consumerFactory());
+        //配合RecordFilterStrategy使用，被过滤的信息将被丢弃
+        factory.setAckDiscarded(true);
+        factory.setRecordFilterStrategy(new RecordFilterStrategy() {
+            @Override
+            public boolean filter(ConsumerRecord consumerRecord) {
+                long data = Long.parseLong((String) consumerRecord.value());
+                log.info("filterContainerFactory filter : "+data);
+                if (data % 2 == 0) {
+                    return false;
+                }
+                //返回true将会被丢弃
+                return true;
+            }
+        });
+        return factory;
+    }
+
 
     //根据consumerProps填写的参数创建消费者工厂
     @Bean

@@ -20,8 +20,8 @@ import java.util.Map;
 /**
  * kafka 配置类
  */
-@Configuration
-@EnableKafka   //启用kafka
+//@Configuration
+//@EnableKafka   //启用kafka
 public class KafkaConfiguration {
 
     //ConcurrentKafkaListenerContainerFactory为创建Kafka监听器的工程类，这里只配置了消费者
