@@ -21,7 +21,7 @@
             //等同于socket = new WebSocket("ws://localhost:8888/xxxx/im/25");
             //var socketUrl="${request.contextPath}/im/"+$("#userId").val();
             // var socketUrl="http://localhost:8766/websocket/"+$("#userId").val();
-            var socketUrl="http://10.3.15.60:8766/websocket/"+$("#userId").val()+"/"+$("#houseId").val();
+            var socketUrl="http://10.3.100.191:8766/websocket/"+$("#userId").val()+"/"+$("#houseId").val();
             // var socketUrl="http://172.31.255.67:9007/websocket/"+$("#userId").val()+"/"+$("#houseId").val();
             // var socketUrl="http://172.31.255.67:9007/websocket/"+"/"+$("#houseId").val();
             socketUrl=socketUrl.replace("https","ws").replace("http","ws");
