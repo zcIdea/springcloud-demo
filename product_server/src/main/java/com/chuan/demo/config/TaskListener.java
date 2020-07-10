@@ -17,8 +17,8 @@ import org.springframework.stereotype.Component;
  * 编写两个定时任务，一个晚上12点，一个早上10点
  * 分别在12点的任务上启动KafkaListener，在10点的任务上关闭KafkaListener
  */
-@Component
-@EnableScheduling
+//@Component
+//@EnableScheduling
 @Slf4j
 public class TaskListener{
 

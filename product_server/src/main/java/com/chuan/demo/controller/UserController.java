@@ -1,10 +1,9 @@
 package com.chuan.demo.controller;
 
-import com.chuan.demo.entity.Person;
+import com.chuan.demo.entity.PersonMongoDb;
 import com.chuan.demo.service.PersonService;
 import com.chuan.demo.service.RedisService;
 import com.chuan.demo.utils.RedisUtil;
-import com.chuan.service.StarterService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
@@ -37,8 +36,8 @@ public class UserController {
     @Autowired
     RedisUtil redisUtil;
 
-    @Autowired
-    private StarterService starterService;
+//    @Autowired
+//    private StarterService starterService;
 
     @ApiOperation(value = "获取用户信息",notes = "获取用户信息接口")
     @ApiImplicitParams({@ApiImplicitParam(name = "id",value = "用户id",required = true,dataType = "Long")})
@@ -67,9 +66,9 @@ public class UserController {
             @ApiImplicitParam(name = "name",value = "用户名",required = true,dataType = "String")
     })
     @GetMapping("/getPersonList")
-    public Person getPersonList(@RequestParam("id") int id,@RequestParam("name") String name) {
-        Person one = personService.getOne(id);
-        Person person = personService.getPersonById(id);
+    public PersonMongoDb getPersonList(@RequestParam("id") int id, @RequestParam("name") String name) {
+        PersonMongoDb one = personService.getOne(id);
+        PersonMongoDb person = personService.getPersonById(id);
         System.out.printf("person"+person.toString());
 
         String s = personService.queryStringValueForRedis("hah");
@@ -88,8 +87,8 @@ public class UserController {
         log.info("提供方testNginx 获取的数据-> userId:{}",userId);
 
         //使用自定义启动器
-        String[] split = starterService.split(",");
-        log.info("自定义启动器->split:{}",split);
+//        String[] split = starterService.split(",");
+//        log.info("自定义启动器->split:{}",split);
 
         return "testNginx提供方方法调用"+userId;
     }

@@ -70,7 +70,7 @@
         <result column="created_time" jdbcType="DATE" property="createdTime" />
         <result column="updated_by" jdbcType="VARCHAR" property="updatedBy" />
         <result column="updated_time" jdbcType="DATE" property="updatedTime" />
-        <association property="person" column="person_id" javaType="com.chuan.demo.entity.Person" select="selectPerson"/>
+        <association property="person" column="person_id" javaType="com.chuan.demo.entity.PersonMongoDb" select="selectPerson"/>
     </resultMap>
     <!-- 关联的嵌套 Select 查询 -->
     <select id="queryGoodsAndPersonList" resultMap="goodsAndPersonResultMap">
@@ -78,13 +78,13 @@
     </select>
 
     <!--<resultMap id="BaseResultMap" type="Person">-->
-    <resultMap id="personBaseResultMap" type="com.chuan.demo.entity.Person">
+    <resultMap id="personBaseResultMap" type="com.chuan.demo.entity.PersonMongoDb">
         <result column="id" jdbcType="INTEGER" property="id" />
         <result column="name" jdbcType="VARCHAR" property="name" />
         <result column="sex" jdbcType="VARCHAR" property="sex" />
         <result column="age" jdbcType="INTEGER" property="age" />
     </resultMap>
-    <select id="selectPerson" resultMap="personBaseResultMap" resultType="com.chuan.demo.entity.Person">
+    <select id="selectPerson" resultMap="personBaseResultMap" resultType="com.chuan.demo.entity.PersonMongoDb">
         select * from person where id=#{id}
     </select>
 
@@ -100,7 +100,7 @@
         <result column="created_time" jdbcType="DATE" property="createdTime" />
         <result column="updated_by" jdbcType="VARCHAR" property="updatedBy" />
         <result column="updated_time" jdbcType="DATE" property="updatedTime" />
-        <association property="person" javaType="com.chuan.demo.entity.Person">
+        <association property="person" javaType="com.chuan.demo.entity.PersonMongoDb">
             <result column="p_id" property="id" />
             <result column="p_name" jdbcType="VARCHAR" property="name" />
             <result column="p_sex" jdbcType="VARCHAR" property="sex" />

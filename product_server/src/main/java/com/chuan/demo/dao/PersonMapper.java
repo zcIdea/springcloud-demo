@@ -1,6 +1,6 @@
 package com.chuan.demo.dao;
 
-import com.chuan.demo.entity.Person;
+import com.chuan.demo.entity.PersonMongoDb;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
@@ -12,13 +12,13 @@ import java.util.List;
 public interface PersonMapper {
 
     @Select("select * from person where id=#{id}")
-    Person getOne(@Param("id") int id);
+    PersonMongoDb getOne(@Param("id") int id);
 
-    Person getPersonById(@Param("id") int id);
+    PersonMongoDb getPersonById(@Param("id") int id);
 
-    int saveUserInfo(Person person);
+    int saveUserInfo(PersonMongoDb person);
 
-    List<Person> selectPersonAndGoods();
+    List<PersonMongoDb> selectPersonAndGoods();
 
-    List<Person> selectPersonAndGoods2();
+    List<PersonMongoDb> selectPersonAndGoods2();
 }

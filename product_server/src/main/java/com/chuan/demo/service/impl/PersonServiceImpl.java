@@ -1,7 +1,7 @@
 package com.chuan.demo.service.impl;
 
 import com.chuan.demo.dao.PersonMapper;
-import com.chuan.demo.entity.Person;
+import com.chuan.demo.entity.PersonMongoDb;
 import com.chuan.demo.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -25,12 +25,12 @@ public class PersonServiceImpl implements PersonService {
     private RedisTemplate<String,String> redisTemplate;
 
     @Override
-    public Person getOne(int id) {
+    public PersonMongoDb getOne(int id) {
         return personMapper.getOne(id);
     }
 
     @Override
-    public Person getPersonById(int id) {
+    public PersonMongoDb getPersonById(int id) {
         return personMapper.getPersonById(id);
     }
 
@@ -46,16 +46,16 @@ public class PersonServiceImpl implements PersonService {
     }
 
     @Override
-    public int saveUserInfo(Person person) {
+    public int saveUserInfo(PersonMongoDb person) {
         return personMapper.saveUserInfo(person);
     }
 
     @Override
-    public List<Person> selectPersonAndGoods() {
+    public List<PersonMongoDb> selectPersonAndGoods() {
         return personMapper.selectPersonAndGoods();
     }
     @Override
-    public List<Person> selectPersonAndGoods2() {
+    public List<PersonMongoDb> selectPersonAndGoods2() {
         return personMapper.selectPersonAndGoods2();
     }
 }
