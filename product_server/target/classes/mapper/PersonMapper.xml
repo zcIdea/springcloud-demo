@@ -4,31 +4,31 @@
 
 
     <!--<resultMap id="BaseResultMap" type="Person">-->
-    <resultMap id="BaseResultMap" type="com.chuan.demo.entity.Person">
+    <resultMap id="BaseResultMap" type="com.chuan.demo.entity.PersonMongoDb">
         <result column="id" jdbcType="INTEGER" property="id" />
         <result column="name" jdbcType="VARCHAR" property="name" />
         <result column="sex" jdbcType="VARCHAR" property="sex" />
         <result column="age" jdbcType="INTEGER" property="age" />
     </resultMap>
 
-    <select id="getPersonById" resultType="com.chuan.demo.entity.Person">
+    <select id="getPersonById" resultType="com.chuan.demo.entity.PersonMongoDb">
         select * from person where id = #{id}
     </select>
 
-    <insert id="saveUserInfo" useGeneratedKeys="true" keyProperty="id" parameterType="com.chuan.demo.entity.Person">
+    <insert id="saveUserInfo" useGeneratedKeys="true" keyProperty="id" parameterType="com.chuan.demo.entity.PersonMongoDb">
         insert into person(name,sex,age) values (#{name},#{sex},#{age})
     </insert>
 
 
     <!-- 集合的嵌套 Select 查询  collection -->
-    <resultMap id="personAndGoodsResultMap" type="com.chuan.demo.entity.Person">
+    <resultMap id="personAndGoodsResultMap" type="com.chuan.demo.entity.PersonMongoDb">
         <result column="id" jdbcType="INTEGER" property="id" />
         <result column="name" jdbcType="VARCHAR" property="name" />
         <result column="sex" jdbcType="VARCHAR" property="sex" />
         <result column="age" jdbcType="INTEGER" property="age" />
         <collection property="goodsList" javaType="ArrayList" column="id" ofType="com.chuan.demo.entity.Goods" select="queryGoodsList"/>
     </resultMap>
-    <select id="selectPersonAndGoods" resultMap="personAndGoodsResultMap" resultType="com.chuan.demo.entity.Person">
+    <select id="selectPersonAndGoods" resultMap="personAndGoodsResultMap" resultType="com.chuan.demo.entity.PersonMongoDb">
         select * from person
     </select>
 
@@ -49,7 +49,7 @@
     <!-- end -->
 
     <!-- 集合的嵌套 Select 查询  collection -->
-    <resultMap id="personAndGoodsResultMap2" type="com.chuan.demo.entity.Person">
+    <resultMap id="personAndGoodsResultMap2" type="com.chuan.demo.entity.PersonMongoDb">
         <id column="p_id" jdbcType="INTEGER" property="id" />
         <result column="name" jdbcType="VARCHAR" property="name" />
         <result column="sex" jdbcType="VARCHAR" property="sex" />
@@ -66,7 +66,7 @@
         </collection>
     </resultMap>
     <!-- 两个表的字段名如果相同，这里要起个别名，区别一下，要不然关联查询的数据有问题 -->
-    <select id="selectPersonAndGoods2" resultMap="personAndGoodsResultMap2" resultType="com.chuan.demo.entity.Person">
+    <select id="selectPersonAndGoods2" resultMap="personAndGoodsResultMap2" resultType="com.chuan.demo.entity.PersonMongoDb">
         select
             a.id p_id,
             a.`name`,

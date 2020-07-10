@@ -31,7 +31,7 @@ import java.util.Map;
  * @Date 2020/5/26 15:52
  **/
 @Slf4j
-@RestController
+//@RestController
 public class KafkaController {
 
     @Autowired

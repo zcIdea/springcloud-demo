@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
  * 使用KafkaSendResultHandler实现消息发送结果回调
  * 当我们使用KafkaTemplate发送消息成功的时候回调用OnSuccess方法，发送失败则会调用onError方法
  */
-@Component
+//@Component
 public class KafkaSendResultHandler implements ProducerListener {
 
     private static final Logger log = LoggerFactory.getLogger(KafkaSendResultHandler.class);

@@ -1,6 +1,6 @@
 package com.chuan.demo.controller;
 
-import com.chuan.demo.entity.Person;
+import com.chuan.demo.entity.PersonMongoDb;
 import com.chuan.demo.service.PersonService;
 import io.swagger.annotations.*;
 import lombok.extern.slf4j.Slf4j;
@@ -46,7 +46,7 @@ public class TestController {
      * @return
      */
     @RequestMapping(value = "/savePersonInfo",method = RequestMethod.POST)
-    public Person saveUserInfo(@RequestBody(required = true) Person person){
+    public PersonMongoDb saveUserInfo(@RequestBody(required = true) PersonMongoDb person){
         log.info("保存人员信息");
         log.info("TestController savePersonInfo--> person:{}",person);
         int i = personService.saveUserInfo(person);
@@ -66,11 +66,11 @@ public class TestController {
     @ApiResponses({@ApiResponse(code = 200,message = "success"),
                    @ApiResponse(code = 400,message = "error")})
     @RequestMapping(value = "/selectPersonAndGoods",method = RequestMethod.GET)
-    public List<Person> selectPersonAndGoods(){
+    public List<PersonMongoDb> selectPersonAndGoods(){
         log.info("查询人员物品信息");
         log.info("TestController selectPersonAndGoods");
-        List<Person> personList = personService.selectPersonAndGoods();
-        List<Person> personList2 = personService.selectPersonAndGoods2();
+        List<PersonMongoDb> personList = personService.selectPersonAndGoods();
+        List<PersonMongoDb> personList2 = personService.selectPersonAndGoods2();
         log.info("查询返回结果 --> personList:{}",personList);
         return personList2;
 

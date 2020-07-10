@@ -9,7 +9,7 @@ import org.springframework.kafka.listener.ListenerExecutionFailedException;
 import org.springframework.messaging.Message;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 @Slf4j
 public class DemoListener {
 

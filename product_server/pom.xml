@@ -83,7 +83,8 @@
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
-            <version>3.5.6-SNAPSHOT</version>
+<!--            <version>3.5.6-SNAPSHOT</version>-->
+            <version>3.5.5</version>
         </dependency>
 
         <!-- mySql依赖 -->
@@ -171,11 +172,11 @@
 
 
         <!-- 自定义启动器 -->
-        <dependency>
+        <!--<dependency>
             <groupId>com.chuan</groupId>
             <artifactId>sample-spring-boot-starter</artifactId>
             <version>1.0.1-SNAPSHOT</version>
-        </dependency>
+        </dependency>-->
 
         <dependency>
             <groupId>com.aliyun</groupId>
@@ -207,6 +208,12 @@
             <groupId>commons-codec</groupId>
             <artifactId>commons-codec</artifactId>
             <version>1.10</version>
+        </dependency>
+
+        <!-- springboot 整合 mongodb   -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
         </dependency>
 
 
