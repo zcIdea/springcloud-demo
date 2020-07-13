@@ -56,7 +56,7 @@ spring:
     cache-names: c1    # 缓存的名字
   data:
     mongodb:
-      host: 10.3.100.175
+      host: 10.3.100.173
       port: 27017
       database: runoob
 

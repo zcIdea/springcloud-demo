@@ -14,7 +14,7 @@ import java.util.List;
  * @Description:
  */
 @RestController
-public class BaseController {
+public class MongoDbController {
 
     @Autowired
     private MongoDbService mongoDbService;
