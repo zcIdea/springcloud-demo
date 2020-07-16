@@ -19,7 +19,7 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
         IClientProfile profile = DefaultProfile
-            .getProfile("cn-shanghai", "LTAI4GGSnszy7iiMAk6wRqQ7", "1gaP0VSdV9FK8okFzOsQzmyo4zivMI");
+            .getProfile("cn-shanghai", "1", "1");
         DefaultProfile
             .addEndpoint("cn-shanghai", "cn-shanghai", "Green", "green.cn-shanghai.aliyuncs.com");        
         IAcsClient client = new DefaultAcsClient(profile);
