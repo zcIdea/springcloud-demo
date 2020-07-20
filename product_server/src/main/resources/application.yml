@@ -54,6 +54,11 @@ spring:
         min-idle: 0    # 连接池中的最小空闲连接
   cache:
     cache-names: c1    # 缓存的名字
+  data:
+    mongodb:
+      host: 10.3.100.173
+      port: 27017
+      database: runoob
 
 server:
   port: 8768

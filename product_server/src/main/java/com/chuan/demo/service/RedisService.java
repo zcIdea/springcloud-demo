@@ -1,14 +1,13 @@
 package com.chuan.demo.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.data.redis.connection.RedisConnection;
 import org.springframework.data.redis.core.RedisCallback;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
+import javax.annotation.Resource;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
@@ -28,8 +27,8 @@ public class RedisService {
     private static final String LOCK_PREFIX ="jhhhh";
     private static final long LOCK_EXPIRE=3000;
 
-    @Autowired
-    private RedisTemplate<String,String> redisTemplate;
+    @Resource
+    private RedisTemplate<String,Object> redisTemplate;
 
     /**
      * 最终加强分布式锁
@@ -134,7 +133,7 @@ public class RedisService {
      * @param value 值
      * @return true成功 false失败
      */
-    public boolean set(String key,String value) {
+    public boolean set(String key,Object value) {
         try {
             redisTemplate.opsForValue().set(key, value);
             return true;
@@ -152,7 +151,7 @@ public class RedisService {
      * @param time 时间(秒) time要大于0 如果time小于等于0 将设置无限期
      * @return true成功 false 失败
      */
-    public boolean set(String key,String value,long time){
+    public boolean set(String key,Object value,long time){
         try {
             if(time>0){
                 redisTemplate.opsForValue().set(key, value, time, TimeUnit.SECONDS);
@@ -285,7 +284,7 @@ public class RedisService {
      * @param key 键
      * @return
      */
-    public Set<String> sGet(String key){
+    public Set<Object> sGet(String key){
         try {
             return redisTemplate.opsForSet().members(key);
         } catch (Exception e) {
@@ -377,7 +376,7 @@ public class RedisService {
      * @param end 结束  0 到 -1代表所有值
      * @return
      */
-    public List<String> lGet(String key,long start, long end){
+    public List<Object> lGet(String key,long start, long end){
         try {
             return redisTemplate.opsForList().range(key, start, end);
         } catch (Exception e) {
@@ -438,7 +437,7 @@ public class RedisService {
      * @param time 时间(秒)
      * @return
      */
-    public boolean lSet(String key, String value, long time) {
+    public boolean lSet(String key, Object value, long time) {
         try {
             redisTemplate.opsForList().rightPush(key, value);
             if (time > 0) expire(key, time);
@@ -475,7 +474,9 @@ public class RedisService {
     public boolean lSet(String key, List<String> value, long time) {
         try {
             redisTemplate.opsForList().rightPushAll(key, value);
-            if (time > 0) expire(key, time);
+            if (time > 0) {
+               expire(key, time);
+            }
             return true;
         } catch (Exception e) {
             e.printStackTrace();

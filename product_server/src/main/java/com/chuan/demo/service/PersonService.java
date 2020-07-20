@@ -1,17 +1,17 @@
 package com.chuan.demo.service;
 
-import com.chuan.demo.entity.Person;
+import com.chuan.demo.entity.PersonMongoDb;
 
 import java.util.List;
 
 public interface PersonService {
 
-    Person getOne(int id);
-    Person getPersonById(int id);
+    PersonMongoDb getOne(int id);
+    PersonMongoDb getPersonById(int id);
 
     String queryStringValueForRedis(String key);
-    int saveUserInfo(Person person);
+    int saveUserInfo(PersonMongoDb person);
 
-    List<Person> selectPersonAndGoods();
-    List<Person> selectPersonAndGoods2();
+    List<PersonMongoDb> selectPersonAndGoods();
+    List<PersonMongoDb> selectPersonAndGoods2();
 }
