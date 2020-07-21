@@ -35,9 +35,11 @@ eureka:
       company-name: eureka
 
 
-# Feign设置超时时间
+#1.Feign设置超时时间
 #  使用Feign调用接口分两层，ribbon的调用和hystrix的调用，所以ribbon的超时时间和Hystrix的超时时间的结合就是Feign的超时时间
 #  一般情况下 都是 ribbon 的超时时间（<）hystrix的超时时间（因为涉及到ribbon的重试机制）
+#2.注意当Feign的隔离策略为THREAD时，由于当使用该隔离策略时，是没办法拿到 ThreadLocal 中的值的，但是RequestContextHolder 源码中，
+#  使用了两个ThreadLocal，因此当使用该隔离策略时是没有办法通过RequestContextHolder获取到request对象的，通过使用SEMAPHORE信号量来获取
 hystrix:
   command:
     default:
@@ -45,6 +47,7 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 5000  #hystrix的超时时间
+          strategy: SEMAPHORE            #Feign的隔离策略 SEMAPHORE信号量
 
 ribbon:
   ReadTimeout: 5000
@@ -63,3 +66,9 @@ feign:
 #配置服务提供方的ip地址（自定义），feign的@FeignClient中使用
 provider:
   url: http://127.0.0.1:8768
+
+#自定义常量
+test-app:
+  token: 123321qwertyuiop
+  appKey: 2132321312312321
+  appSecret: uoupuu78797879779
