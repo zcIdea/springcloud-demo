@@ -14,7 +14,9 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.util.CollectionUtils;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.util.Enumeration;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.locks.Lock;
@@ -143,14 +145,26 @@ public class GoodsController {
      */
     @ApiOperation(value = "queryGoodsAndPersonInfoList",notes = "查询物品人员信息")
     @RequestMapping(value = "/queryGoodsAndPersonInfoList",method = RequestMethod.GET)
-    public List<Goods> queryGoodsAndPersonInfoList(){
+    public List<Goods> queryGoodsAndPersonInfoList(HttpServletRequest request){
         log.info("提供方 查询物品人员信息");
         log.info("GoodsController queryGoodsAndPersonInfoList");
-        List<Goods> goods = goodsService.queryGoodsAndPersonList();
-        List<Goods> goods2 = goodsService.queryGoodsAndPersonList2();
-        log.info("提供方 新增返回结果 --> i:{}",goods.get(0).getGoods());
-        log.info("提供方 新增返回结果---------987654334432----- --> i:{}",goods2.get(0).getGoods());
-        return goods2;
+
+        //获取请求消息头信息
+        Enumeration<String> headerNames = request.getHeaderNames();
+        if (headerNames!=null){
+            while (headerNames.hasMoreElements()){
+                String name = headerNames.nextElement();
+                String value = request.getHeader(name);
+                log.info("--------------【name】:"+name+";"+"【value】:"+value);
+            }
+        }
+
+//        List<Goods> goods = goodsService.queryGoodsAndPersonList();
+//        List<Goods> goods2 = goodsService.queryGoodsAndPersonList2();
+//        log.info("提供方 新增返回结果 --> i:{}",goods.get(0).getGoods());
+//        log.info("提供方 新增返回结果---------987654334432----- --> i:{}",goods2.get(0).getGoods());
+//        return goods2;
+        return null;
 
     }
 
