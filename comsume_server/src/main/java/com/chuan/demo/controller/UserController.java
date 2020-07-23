@@ -16,10 +16,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
 import java.net.URI;
@@ -123,9 +120,31 @@ public class UserController {
         return goods;
     }
 
+    /**
+     * 解决跨域问题 @CrossOrigin(value = "http://localhost:8080")
+     * cors_demo项目中的 hello.html
+     * 也可实现 WebMvcConfigurer接口的addCorsMappings方法，来配置跨域请求
+     * @param userId
+     * @return
+     */
+    @CrossOrigin(value = "http://localhost:8080")
     @ApiOperation(value = "测试nginx",notes = "接口1")
     @GetMapping("/testNginx")
     public String testNginx(@RequestParam("id") Long userId) {
+        log.info("消费方 获取物品信息");
+        log.info("消费方 获取的数据-> userId:{}",userId);
+        return "消费方方法调用"+userId;
+    }
+
+    /**
+     * 通过统一配置类来解决跨域问题（WebMvcConfigurer接口的addCorsMappings方法）
+     * @return
+     */
+//    @CrossOrigin(value = "http://localhost:8080")
+    @ApiOperation(value = "测试Post",notes = "接口1")
+    @PostMapping("/testPost")
+    public String testPost() {
+        String userId="231313213";
         log.info("消费方 获取物品信息");
         log.info("消费方 获取的数据-> userId:{}",userId);
         return "消费方方法调用"+userId;

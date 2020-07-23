@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-3.3.1.js"></script>
+</head>
+<body>
+
+    <div id="app"></div>
+    <input type="button" onclick="btnGet()" value="get"/>
+    <input type="button" onclick="btnPost()" value="post"/>
+
+<script>
+
+    function btnGet() {
+        $.get("http://localhost:8767/testNginx?id=123",function (msg) {
+            $("#app").html(msg);
+        })
+    }
+    function btnPost() {
+        $.post("http://localhost:8767/testPost",function (msg) {
+            $("#app").html(msg);
+        })
+    }
+
+</script>
+
+</body>
+</html>
