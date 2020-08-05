@@ -12,6 +12,10 @@ import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
+import org.redisson.api.RBlockingQueue;
+import org.redisson.api.RList;
+import org.redisson.api.RQueue;
+import org.redisson.api.RedissonClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.cloud.client.ServiceInstance;
@@ -23,6 +27,7 @@ import java.net.URI;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 //Swagger注解，形成api接口
 @Api(value = "UserController",description = "服务消费方用户接口！")
@@ -47,6 +52,9 @@ public class UserController {
 
     @Autowired
     private GoodsApi goodsApi;
+
+    @Autowired
+    private RedissonClient redissonClient;
 
     @ApiOperation(value = "获取用户信息-消费方",notes = "接口")
     @ApiImplicitParams({@ApiImplicitParam(name = "id",value = "用户id",required = true,dataType = "Long")})
@@ -144,6 +152,35 @@ public class UserController {
     @ApiOperation(value = "测试Post",notes = "接口1")
     @PostMapping("/testPost")
     public String testPost() {
+
+        //列表（List）
+        RList<Object> list = redissonClient.getList("anyList");
+        list.add("A");
+        list.add("B");
+        list.add("C");
+        list.add("D");
+        log.info("get(0):{}",list.get(0));
+        boolean d = list.remove("D");
+
+        //列表（List）
+        RQueue<Object> queue = redissonClient.getQueue("anyQueue");
+        queue.add("queue_A");
+        queue.add("queue_B");
+        queue.add("queue_C");
+        log.info((String) queue.peek());
+        log.info((String) queue.poll());
+
+        //阻塞队列（Blocking Queue）
+        RBlockingQueue<String> blockingQueue = redissonClient.getBlockingQueue("anyQueue");
+        queue.offer("queue_A");
+        log.info((String) blockingQueue.peek());
+        log.info((String) blockingQueue.poll());
+        try {
+            blockingQueue.poll(10, TimeUnit.MINUTES);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         String userId="231313213";
         log.info("消费方 获取物品信息");
         log.info("消费方 获取的数据-> userId:{}",userId);
