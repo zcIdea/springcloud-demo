@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: consul-demo
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        service-name: ${spring.application.name}
+        register: true  #设置是否需要注册到 consul 中，默认true 注册，false：不注册
+server:
+  port: 8790
