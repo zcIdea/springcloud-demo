@@ -72,6 +72,10 @@ public class MaoPaoPaiXu {
         MaoPaoPaiXu maoPaoPaiXu = new MaoPaoPaiXu();
         maoPaoPaiXu.demo1();
         maoPaoPaiXu.demo3();
+
+        //2*8=16
+        System.out.println(2<<3);
+
     }
 
 }
